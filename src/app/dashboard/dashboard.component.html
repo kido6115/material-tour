@@ -1,0 +1,5 @@
+<mat-grid-list cols="1" rowHeight="3:2">
+  <mat-grid-tile *ngFor="let trip of trips" class="background-image" [ngStyle]="{'background-image':'url('+trip.tripImg+')'}">
+    {{trip.tripName}}
+  </mat-grid-tile>
+</mat-grid-list>
