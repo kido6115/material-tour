@@ -1,5 +1,5 @@
 <mat-grid-list cols="1" rowHeight="3:2">
-  <mat-grid-tile *ngFor="let trip of trips;let i=index" routerLink="/day{{i+1}}" class="background-image" [ngStyle]="{'background-image':'url('+trip.tripImg+')'}">
-    {{trip.tripName}}
+  <mat-grid-tile *ngFor="let trip of trips;let i=index" routerLink="/day{{i+1}}" class="background-image" [ngStyle]="{'background-image':'url('+trip.tripImg+')','background-repeat': 'no-repeat','background-size': '100% 100%'}">
+    <h1>{{trip.tripName}}</h1>
   </mat-grid-tile>
 </mat-grid-list>

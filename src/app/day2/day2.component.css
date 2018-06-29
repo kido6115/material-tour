@@ -1,0 +1,10 @@
+agm-map {
+    height: 100%;
+    width: 99.5%;
+}
+.mat-progress-bar{
+    width: 100px;
+}
+.tool{
+    flex: 1 1 auto;
+}

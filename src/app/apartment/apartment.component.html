@@ -1,9 +1,13 @@
-<mat-grid-list cols="1">
-    <mat-grid-tile gutterSize="5px">
+<mat-grid-list rowHeight="50px" cols="2">
+    <mat-grid-tile colspan="2" rowspan="8">
         <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoomValue">
-            <agm-data-layer [geoJson]="geoJson"></agm-data-layer>
+            <agm-data-layer matBadge="4" matBadgeOverlap="false" [geoJson]="geoJson"></agm-data-layer>
             <div *ngIf="isLocation">
                 <agm-marker [latitude]="lat" [longitude]="lng" [iconUrl]="iconUrl">
+                </agm-marker>
+            </div>
+            <div *ngIf="isRoute">
+                <agm-marker *ngFor="let m of hints" [latitude]="m.lat" [longitude]="m.lng" [iconUrl]="m.icon">
                 </agm-marker>
             </div>
             <agm-marker *ngFor="let m of markers" [latitude]="m.lat" [longitude]="m.lng">
@@ -12,7 +16,7 @@
                 </agm-info-window>
             </agm-marker>
             <div *ngIf="isSuper">
-                <agm-marker *ngFor="let m of super" [latitude]="m.lat" [longitude]="m.lng">
+                <agm-marker *ngFor="let m of super" [latitude]="m.lat" [longitude]="m.lng" [iconUrl]="m.icon">
                     <agm-info-window>
                         <strong style="color: black">{{m.label}}</strong>
                     </agm-info-window>
@@ -20,7 +24,7 @@
             </div>
         </agm-map>
     </mat-grid-tile>
-    <mat-grid-tile gutterSize="5px">
+    <mat-grid-tile colspan="2" rowspan="2">
 
         <div class="content">
             <div class="toolbar-seprator">
@@ -28,10 +32,33 @@
                     <mat-icon>gps_fixed</mat-icon>
                 </button>
             </div>
-            <mat-slide-toggle color="primary" (change)="showSuper($event)">超商、超市</mat-slide-toggle>
+            <mat-slide-toggle color="primary" (change)="showSuper($event)"><mat-icon>shop</mat-icon>超商、<mat-icon>shopping_cart</mat-icon>超市</mat-slide-toggle>
             <br>
             <mat-slide-toggle color="primary" (change)="showRoute($event)">民宿路線</mat-slide-toggle>
-
         </div>
+    </mat-grid-tile>
+    <mat-grid-tile rowspan="2">
+        <img style="height:16px;align-self: flex-start" src="./assets/one.png">
+        <img style="height: 100%" src="./assets/1.JPG">
+    </mat-grid-tile>
+    <mat-grid-tile rowspan="2">
+        <img style="height:16px;align-self: flex-start" src="./assets/two.png">
+        <img style="height: 100%" src="./assets/2.JPG">
+    </mat-grid-tile>
+    <mat-grid-tile rowspan="2">
+        <img style="height:16px;align-self: flex-start" src="./assets/three.png">
+        <img style="height: 80%" src="./assets/3.JPG">
+    </mat-grid-tile>
+    <mat-grid-tile rowspan="2">
+        <img style="height:16px;align-self: flex-start" src="./assets/four.png">
+        <img style="height: 100%" src="./assets/4.JPG">
+    </mat-grid-tile>
+    <mat-grid-tile rowspan="2">
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <button mat-raised-button color="primary">
+            <mat-icon>lock</mat-icon>
+            0123
+        </button>
     </mat-grid-tile>
 </mat-grid-list>

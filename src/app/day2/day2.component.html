@@ -1,3 +1,66 @@
-<p>
-  day2 works!
-</p>
+<mat-grid-list rowHeight="50px" cols="3">
+  <mat-grid-tile colspan="3" rowspan="6" gutterSize="5px">
+    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoomValue">
+      <div *ngIf="isRoute">
+        <agm-data-layer [geoJson]="bikeJson"></agm-data-layer>
+      </div>
+      <div *ngIf="isLocation">
+        <agm-marker [latitude]="lat" [longitude]="lng" [iconUrl]="iconUrl">
+        </agm-marker>
+      </div>
+      <div *ngIf="isSpot">
+        <agm-marker *ngFor="let m of markers" [latitude]="m.lat" [longitude]="m.lng">
+          <agm-info-window>
+            <strong style="color: black">{{m.label}}</strong>
+          </agm-info-window>
+        </agm-marker>
+      </div>
+    </agm-map>
+  </mat-grid-tile>
+  <mat-grid-tile gutterSize="5px">
+    <div>
+      <button (click)="showGps()" mat-mini-fab color="primary">
+        <mat-icon>gps_fixed</mat-icon>
+      </button>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile gutterSize="5px">
+    <mat-slide-toggle color="primary" (change)="showRoute($event)">腳踏車路線</mat-slide-toggle>
+  </mat-grid-tile>
+  <mat-grid-tile gutterSize="5px">
+    <div>
+      <button mat-mini-fab color="warn">
+        <mat-icon>assignment</mat-icon>
+      </button>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="3" rowspan="2" gutterSize="5px">
+    <h4 class="icon-part">
+      <div>東福寺</div>
+      <mat-icon color="accent">directions_subway</mat-icon>
+    </h4>
+    <h6 class="">
+      <div>奈良(JR)</div>
+      <div>(0:03)</div>
+      ¥140
+      <mat-progress-bar mode="buffer" value="0" bufferValue="0"></mat-progress-bar>
+    </h6>
+    <h4 class="icon-part">
+      <div>京都</div>
+      <mat-icon color="accent">directions_subway</mat-icon>
+    </h4>
+    <h6 class="">
+      <div>山陰本線</div>
+      <div>(0:40)</div>
+      ¥280
+      <mat-progress-bar mode="buffer" value="0" bufferValue="0"></mat-progress-bar>
+    </h6>
+    <h4 class="icon-part">
+      <div>馬堀</div>
+      <mat-icon color="accent">directions_subway</mat-icon>
+    </h4>
+
+  </mat-grid-tile>
+  <mat-grid-tile colspan="3">
+  </mat-grid-tile>
+</mat-grid-list>
