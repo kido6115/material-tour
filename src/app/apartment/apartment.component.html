@@ -1,0 +1,37 @@
+<mat-grid-list cols="1">
+    <mat-grid-tile gutterSize="5px">
+        <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoomValue">
+            <agm-data-layer [geoJson]="geoJson"></agm-data-layer>
+            <div *ngIf="isLocation">
+                <agm-marker [latitude]="lat" [longitude]="lng" [iconUrl]="iconUrl">
+                </agm-marker>
+            </div>
+            <agm-marker *ngFor="let m of markers" [latitude]="m.lat" [longitude]="m.lng">
+                <agm-info-window>
+                    <strong style="color: black">{{m.label}}</strong>
+                </agm-info-window>
+            </agm-marker>
+            <div *ngIf="isSuper">
+                <agm-marker *ngFor="let m of super" [latitude]="m.lat" [longitude]="m.lng">
+                    <agm-info-window>
+                        <strong style="color: black">{{m.label}}</strong>
+                    </agm-info-window>
+                </agm-marker>
+            </div>
+        </agm-map>
+    </mat-grid-tile>
+    <mat-grid-tile gutterSize="5px">
+
+        <div class="content">
+            <div class="toolbar-seprator">
+                <button (click)="showGps()" mat-mini-fab color="primary">
+                    <mat-icon>gps_fixed</mat-icon>
+                </button>
+            </div>
+            <mat-slide-toggle color="primary" (change)="showSuper($event)">超商、超市</mat-slide-toggle>
+            <br>
+            <mat-slide-toggle color="primary" (change)="showRoute($event)">民宿路線</mat-slide-toggle>
+
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>

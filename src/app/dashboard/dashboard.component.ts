@@ -12,11 +12,11 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
     this.trips=[
-      {tripName:"京都",tripImg:"/assets/kyoto.jpg"},
-      {tripName:"奈良",tripImg:"/assets/nara.jpg"},
-      {tripName:"京都",tripImg:"/assets/kyoto.jpg"},
-      {tripName:"京都",tripImg:"/assets/kyoto.jpg"},
-      {tripName:"京都",tripImg:"/assets/kyoto.jpg"},
+      {tripName:"京都",tripImg:"./assets/kyoto.jpg"},
+      {tripName:"奈良",tripImg:"./assets/nara.jpg"},
+      {tripName:"京都",tripImg:"./assets/kyoto.jpg"},
+      {tripName:"京都",tripImg:"./assets/kyoto.jpg"},
+      {tripName:"京都",tripImg:"./assets/kyoto.jpg"},
 
     ];
   }

@@ -1,0 +1,56 @@
+<mat-grid-list rowHeight="50px" cols="1">
+  <mat-grid-tile rowspan="8" gutterSize="5px">
+    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoomValue">
+      <div *ngIf="isLocation">
+        <agm-marker [latitude]="lat" [longitude]="lng" [iconUrl]="iconUrl">
+        </agm-marker>
+      </div>
+      <agm-marker *ngFor="let m of markers" [latitude]="m.lat" [longitude]="m.lng">
+        <agm-info-window>
+          <strong style="color: black">{{m.label}}</strong>
+        </agm-info-window>
+      </agm-marker>
+    </agm-map>
+  </mat-grid-tile>
+  <mat-grid-tile gutterSize="5px">
+    <button (click)="showGps()" mat-mini-fab color="primary">
+      <mat-icon>gps_fixed</mat-icon>
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile rowspan="2" gutterSize="5px">
+    <h5 class="icon-part">
+      <div>機場</div>
+      <div>(16:40)</div>
+      <mat-icon color="accent">flight_land</mat-icon>
+    </h5>
+    <h6 class="">
+      <div>haruka(JR)</div>
+      <div>(1:16)</div>
+      ¥3500
+      <mat-progress-bar mode="buffer" value="0" bufferValue="0"></mat-progress-bar>
+    </h6>
+    <span class="icon-part">
+      <div>京都</div>
+      <mat-icon color="accent">directions_subway</mat-icon>
+    </span>
+    <h6 class="">
+      <div>奈良(JR)</div>
+      <div>(0:03)</div>
+      ¥140
+      <mat-progress-bar mode="buffer" value="0" bufferValue="0"></mat-progress-bar>
+    </h6>
+    <span class="icon-part">
+      <div>東福寺</div>
+      <mat-icon color="accent">directions_subway</mat-icon>
+    </span>
+    <h6 class="">
+      <div>步行</div>
+      <div>(0:09)</div>
+      <mat-progress-bar mode="buffer" value="0" bufferValue="0"></mat-progress-bar>
+    </h6>
+    <span class="icon-part">
+      <div>民宿</div>
+      <mat-icon color="accent">home</mat-icon>
+    </span>
+  </mat-grid-tile>
+</mat-grid-list>

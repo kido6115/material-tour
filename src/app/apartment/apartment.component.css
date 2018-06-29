@@ -1,0 +1,9 @@
+agm-map {
+    height: 100%;
+    width: 99.5%;
+}
+.content {
+    align-self: flex-start;
+    width: 100%;
+    margin: 5px;
+  }

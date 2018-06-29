@@ -1,0 +1,25 @@
+<mat-grid-list rowHeight="50px" cols="1">
+    <mat-grid-tile rowspan="6" gutterSize="5px">
+      <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoomValue">
+        <div *ngIf="isLocation">
+          <agm-marker [latitude]="lat" [longitude]="lng" [iconUrl]="iconUrl">
+          </agm-marker>
+        </div>
+        <div *ngIf="isSpot">
+        <agm-marker *ngFor="let m of markers" [latitude]="m.lat" [longitude]="m.lng">
+          <agm-info-window>
+            <strong style="color: black">{{m.label}}</strong>
+          </agm-info-window>
+        </agm-marker>
+        </div>
+      </agm-map>
+    </mat-grid-tile>
+    <mat-grid-tile gutterSize="5px">
+      <button (click)="showGps()" mat-mini-fab color="primary">
+        <mat-icon>gps_fixed</mat-icon>
+      </button>
+    </mat-grid-tile>
+    <mat-grid-tile rowspan="2" gutterSize="5px">
+     
+    </mat-grid-tile>
+  </mat-grid-list>

@@ -7,16 +7,21 @@
   <mat-sidenav-container>
         <mat-sidenav #sideNav>
                 <mat-nav-list>
-                        <a routerLink="/dashboard" mat-list-item>首頁</a>
-                        <a routerLink="/day1" mat-list-item>京都(Day1)</a>
-                        <a routerLink="/day2" mat-list-item>奈良(Day2)</a>
-                        <a routerLink="/day3" mat-list-item>京都(Day3)</a>
-                        <a routerLink="/day4" mat-list-item>京都(Day4)</a>
-                        <a routerLink="/day5" mat-list-item>京都(Day4)</a>
+                        <button mat-button color="primary" routerLink="/dashboard" mat-list-item>首頁</button><br>
+                        <button mat-button color="primary" routerLink="/day1" mat-list-item>京都(Day1)</button><br>
+                        <button mat-button color="primary" routerLink="/day2" mat-list-item>奈良(Day2)</button><br>
+                        <button mat-button color="primary" routerLink="/day3" mat-list-item>京都(Day3)</button><br>
+                        <button mat-button color="primary" routerLink="/day4" mat-list-item>京都(Day4)</button><br>
+                        <button mat-button color="primary" routerLink="/day5" mat-list-item>京都(Day5)</button><br>
+                        <button mat-button color="primary" routerLink="/apartment" mat-list-item>民宿周邊</button><br>
+                        <button mat-button color="primary" routerLink="/air-port-line" mat-list-item>機場周邊</button><br>
+
                 </mat-nav-list>
               </mat-sidenav>
               <mat-sidenav-content>
+                      <div style="width:100%;height: 800px; background-color:black;">
                   <router-outlet></router-outlet>
+                </div>
               </mat-sidenav-content>
       </mat-sidenav-container>
 </div>
