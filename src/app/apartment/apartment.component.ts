@@ -25,26 +25,33 @@ export class ApartmentComponent implements OnInit {
       return res
     }));
   }
+  stopGps() {
+    navigator.geolocation.clearWatch(this.watch);
+    console.log("clear");
+  }
+  watch;
   showGps() {
     if (navigator.geolocation) {
       var options = {
         enableHighAccuracy: true,
         maximumAge: 1000
       };
-      var watchId = navigator.geolocation.watchPosition(pos => {
-        if (!window.location.href.match('day1')) {
-          navigator.geolocation.clearWatch(watchId);
-          console.log("clear");
-        } else {
-          this.lng = +pos.coords.longitude;
-          this.lat = +pos.coords.latitude;
-          console.log("watch");
-
+      this.watch = navigator.geolocation.watchPosition(pos => {
+        this.lng = +pos.coords.longitude;
+        this.lat = +pos.coords.latitude;
+        console.log("watch");
+        var id=this.watch;
+        var stops = document.getElementsByClassName("side");
+        for (var i = 0; i < stops.length; i++) {
+          stops[i].addEventListener('click', function () {
+            navigator.geolocation.clearWatch(id);
+            console.log("clear");
+          });
         }
-
       }, null, options);
     }
     this.isLocation = true;
+
   }
   showRoute(event) {
     if (event.checked) {
