@@ -1,3 +1,4 @@
+import { spots } from './../model/spots';
 import { HttpClient } from '@angular/common/http';
 import { Spot } from './../model/spot';
 import { Component, OnInit } from '@angular/core';
@@ -28,11 +29,21 @@ export class Day2Component implements OnInit {
   }
   showGps() {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(pos => {
-        this.lng = +pos.coords.longitude;
-        this.lat = +pos.coords.latitude;
-      });
-    } else {
+      var options = {
+        enableHighAccuracy: true
+      };
+      var watchId = navigator.geolocation.watchPosition(pos => {
+        if (!window.location.href.match('day2')) {
+          navigator.geolocation.clearWatch(watchId);
+          console.log("clear");
+        } else {
+          this.lng = +pos.coords.longitude;
+          this.lat = +pos.coords.latitude;
+          console.log("watch");
+
+        }
+
+      }, null, options);
     }
     this.isLocation = true;
   }
@@ -54,6 +65,7 @@ export class Day2Component implements OnInit {
   ngOnInit() {
     this.getGeoJsonLayer().subscribe(result=>{
       this.bikeJson = result;
+      this.markers=spots;
       console.log(result);
     });
   }

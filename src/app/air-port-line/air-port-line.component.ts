@@ -17,15 +17,22 @@ export class AirPortLineComponent implements OnInit {
   constructor() {
 
   }
-  showGps(){
+  showGps() {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(pos=>{
+      navigator.geolocation.getCurrentPosition(pos => {
         this.lng = +pos.coords.longitude;
         this.lat = +pos.coords.latitude;
+        var interval = setInterval(() => {
+          if (!window.location.href.match('air-port-line')) {
+            clearInterval(interval);
+          } else {
+            this.lng = +pos.coords.longitude;
+            this.lat = +pos.coords.latitude;
+          }
+        }, 2000);
       });
-  } else {
-  }
-    this.isLocation=true;
+    }
+    this.isLocation = true;
   }
   markers: any[] = [
     {

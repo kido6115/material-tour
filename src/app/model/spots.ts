@@ -52,9 +52,14 @@ export const spots: Spot[] = [
         label: '平等院',
         draggable: false
     },{
-        lng: 135.853030,
-        lat: 34.689534,
+        lng: 135.843582,
+        lat: 34.685359,
         label: '奈良公園',
+        draggable: false
+    },{
+        lng: 135.839706,
+        lat: 34.688999,
+        label: '東大寺',
         draggable: false
     },
 ];

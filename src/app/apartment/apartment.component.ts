@@ -27,44 +27,24 @@ export class ApartmentComponent implements OnInit {
   }
   showGps() {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(pos => {
-        this.lng = +pos.coords.longitude;
-        this.lat = +pos.coords.latitude;
-        var interval = setInterval(() => {
-          if (!window.location.href.match('apartment')) {
-            // if (this.lng === +pos.coords.longitude && this.lat === +pos.coords.latitude) {
-            clearInterval(interval);
-          } else {
-            this.lng = +pos.coords.longitude;
-            this.lat = +pos.coords.latitude;
-          }
-        }, 2000);
-      });
+      var options = {
+        enableHighAccuracy: true,
+        maximumAge: 1000
+      };
+      var watchId = navigator.geolocation.watchPosition(pos => {
+        if (!window.location.href.match('day1')) {
+          navigator.geolocation.clearWatch(watchId);
+          console.log("clear");
+        } else {
+          this.lng = +pos.coords.longitude;
+          this.lat = +pos.coords.latitude;
+          console.log("watch");
 
+        }
+
+      }, null, options);
     }
     this.isLocation = true;
-    // if (navigator.geolocation) {
-    //   navigator.geolocation.getCurrentPosition(pos => {
-    //     if (this.lng === +pos.coords.longitude && this.lat === +pos.coords.latitude) {
-    //     } else {
-    //       this.lng = +pos.coords.longitude;
-    //       this.lat = +pos.coords.latitude;
-    //     }
-    //   });
-    //   var interval = setInterval(() => {
-    //     navigator.geolocation.getCurrentPosition(pos => {
-    //       if(!window.location.href.match('apartment')){
-    //       // if (this.lng === +pos.coords.longitude && this.lat === +pos.coords.latitude) {
-    //         clearInterval(interval);
-    //       } else {
-    //         this.lng = +pos.coords.longitude;
-    //         this.lat = +pos.coords.latitude;
-    //       }
-    //     });
-    //   }, 2000);
-
-    // }
-    // this.isLocation = true;
   }
   showRoute(event) {
     if (event.checked) {
