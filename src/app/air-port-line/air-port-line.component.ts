@@ -1,6 +1,7 @@
 import { AirPortLineModalComponent } from './air-port-line-modal/air-port-line-modal.component';
 import { MatDialog } from '@angular/material';
 import { Component, OnInit } from '@angular/core';
+import { ToDoModalComponent } from './to-do-modal/to-do-modal.component';
 
 @Component({
   selector: 'app-air-port-line',
@@ -19,25 +20,35 @@ export class AirPortLineComponent implements OnInit {
   constructor(public dialog:MatDialog) {
 
   }
+  watch;
   showGps() {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(pos => {
+      var options = {
+        enableHighAccuracy: true,
+        maximumAge: 1000
+      };
+      this.watch = navigator.geolocation.watchPosition(pos => {
         this.lng = +pos.coords.longitude;
         this.lat = +pos.coords.latitude;
-        var interval = setInterval(() => {
-          if (!window.location.href.match('air-port-line')) {
-            clearInterval(interval);
-          } else {
-            this.lng = +pos.coords.longitude;
-            this.lat = +pos.coords.latitude;
-          }
-        }, 2000);
-      });
+        console.log("watch");
+        var id = this.watch;
+        var stops = document.getElementsByClassName("side");
+        for (var i = 0; i < stops.length; i++) {
+          stops[i].addEventListener('click', function () {
+            navigator.geolocation.clearWatch(id);
+            console.log("clear");
+          });
+        }
+      }, null, options);
     }
     this.isLocation = true;
+
   }
   openDialog(){
     this.dialog.open(AirPortLineModalComponent);
+  }
+  openToDoDialog(){
+    this.dialog.open(ToDoModalComponent);
   }
   markers: any[] = [
     {

@@ -5,6 +5,7 @@ import { Spot } from './../model/spot';
 import { Component, OnInit } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { MatDialog } from '@angular/material';
+import { of, Observable } from 'rxjs';
 
 @Component({
   selector: 'app-day2',
@@ -28,6 +29,9 @@ export class Day2Component implements OnInit {
     return this.httpClient.get<any[]>(this.geojson).pipe(map(res => {
       return res
     }));
+  }
+  public getSpots(): Observable<Spot[]> {
+    return of(spots);
   }
   watch;
   showGps() {
@@ -74,9 +78,9 @@ export class Day2Component implements OnInit {
   ngOnInit() {
     this.getGeoJsonLayer().subscribe(result => {
       this.bikeJson = result;
-      this.markers = spots;
-      console.log(result);
+      // this.markers = spots;
     });
+    this.getSpots().subscribe(spots => { this.markers = spots });
   }
 
 }

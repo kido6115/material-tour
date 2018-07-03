@@ -4,6 +4,8 @@ import { MatDialog } from '@angular/material';
 import { spots } from './../model/spots';
 import { Spot } from './../model/spot';
 import { Component, OnInit } from '@angular/core';
+import { ObserveOnMessage } from 'rxjs/internal/operators/observeOn';
+import { of, Observable } from 'rxjs';
 
 @Component({
   selector: 'app-day4',
@@ -46,12 +48,15 @@ export class Day4Component implements OnInit {
 
   }
   openDialog() {
-    this.dialog.open(Day4ModalComponent); 
+    this.dialog.open(Day4ModalComponent);
   }
-  markers: Spot[]; 
+  getSpots(): Observable<Spot[]> {
+    return of(spots);
+  }
+  markers: Spot[];
 
   ngOnInit() {
-    this.markers = spots;
+    this.getSpots().subscribe(spots => { this.markers = spots });
 
   }
 }

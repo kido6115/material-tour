@@ -1,26 +1,34 @@
 <div style="text-align:center">
-    <mat-toolbar>
-            <button mat-icon-button (click)="sideNav.toggle()">
-                    <mat-icon>{{ sideNav.opened ? 'close' : 'menu' }}</mat-icon>
-            </button>
-  </mat-toolbar>
-  <mat-sidenav-container>
-        <mat-sidenav #sideNav>
-                <mat-nav-list>
-                        <button class="side" mat-button color="primary" routerLink="/dashboard" mat-list-item>首頁</button><br>
-                        <button class="side" mat-button color="primary" routerLink="/day1" mat-list-item>京都(Day1)</button><br>
-                        <button class="side" mat-button color="primary" routerLink="/day2" mat-list-item>嵐山(Day2)</button><br>
-                        <button class="side" mat-button color="primary" routerLink="/day3" mat-list-item>奈良(Day3)</button><br>
-                        <button class="side" mat-button color="primary" routerLink="/day4" mat-list-item>京都(Day4)</button><br>
-                        <button class="side" mat-button color="primary" routerLink="/day5" mat-list-item>京都(Day5)</button><br>
-                        <button class="side" mat-button color="primary" routerLink="/air-port-line" mat-list-item>機場<->民宿</button><br>
+        <mat-toolbar>
+                <button mat-icon-button (click)="sideNav.toggle()">
+                        <mat-icon>{{ sideNav.opened ? 'close' : 'menu' }}</mat-icon>
+                </button>
+        </mat-toolbar>
+        <mat-sidenav-container>
+                <mat-sidenav #sideNav>
+                        <mat-nav-list>
+                                <button class="side" mat-button color="primary" routerLink="/dashboard" mat-list-item>首頁</button>
+                                <br>
+                                <button class="side" mat-button color="primary" routerLink="/day1" mat-list-item>京都(Day1)</button>
+                                <br>
+                                <button class="side" mat-button color="primary" routerLink="/day2" mat-list-item>嵐山(Day2)</button>
+                                <br>
+                                <button class="side" mat-button color="primary" routerLink="/day3" mat-list-item>奈良(Day3)</button>
+                                <br>
+                                <button class="side" mat-button color="primary" routerLink="/day4" mat-list-item>京都(Day4)</button>
+                                <br>
+                                <button class="side" mat-button color="primary" routerLink="/day5" mat-list-item>京都(Day5)</button>
+                                <br>
+                                <button class="side" mat-button color="primary" routerLink="/air-port-line" mat-list-item>機場
+                                        <mat-icon>swap_horiz</mat-icon>民宿</button>
+                                <br>
 
-                </mat-nav-list>
-              </mat-sidenav>
-              <mat-sidenav-content>
-                      <div style="width:100%;height: 800px; background-color:black;">
-                  <router-outlet></router-outlet>
-                </div>
-              </mat-sidenav-content>
-      </mat-sidenav-container>
+                        </mat-nav-list>
+                </mat-sidenav>
+                <mat-sidenav-content>
+                        <div style="width:100%;height: 800px; background-color:black;">
+                                <router-outlet></router-outlet>
+                        </div>
+                </mat-sidenav-content>
+        </mat-sidenav-container>
 </div>

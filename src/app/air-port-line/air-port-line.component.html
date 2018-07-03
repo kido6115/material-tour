@@ -18,11 +18,24 @@
     </button>
   </mat-grid-tile>
   <mat-grid-tile gutterSize="5px">
-    </mat-grid-tile>
-    <mat-grid-tile gutterSize="5px">
-        <button (click)="openDialog()" mat-mini-fab color="warn">
-          <mat-icon>map</mat-icon>
-        </button>
-      </mat-grid-tile>
+      <h5><mat-icon>flight_land</mat-icon></h5>
+      <h5><div>07/27 16:30</div></h5>
+      <h5><mat-icon>flight_takeoff</mat-icon></h5>
+      <h5><div>07/31 22:25</div></h5>
+  </mat-grid-tile>
+  <mat-grid-tile gutterSize="5px">
+    <button (click)="openDialog()" mat-mini-fab color="warn">
+      <mat-icon>map</mat-icon>
+    </button>
+  </mat-grid-tile>
+
+  <mat-grid-tile colspan="2" gutterSize="5px">
+  <h3>關西國際空港</h3>
+  </mat-grid-tile>
+  <mat-grid-tile gutterSize="5px">
+    <button (click)="openToDoDialog()" mat-mini-fab color="warn">
+      <mat-icon>assignment</mat-icon>
+    </button>
+  </mat-grid-tile>
 
 </mat-grid-list>
