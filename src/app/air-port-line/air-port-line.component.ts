@@ -1,3 +1,5 @@
+import { AirPortLineModalComponent } from './air-port-line-modal/air-port-line-modal.component';
+import { MatDialog } from '@angular/material';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -14,7 +16,7 @@ export class AirPortLineComponent implements OnInit {
 
   isLocation:boolean=false;
 
-  constructor() {
+  constructor(public dialog:MatDialog) {
 
   }
   showGps() {
@@ -33,6 +35,9 @@ export class AirPortLineComponent implements OnInit {
       });
     }
     this.isLocation = true;
+  }
+  openDialog(){
+    this.dialog.open(AirPortLineModalComponent);
   }
   markers: any[] = [
     {

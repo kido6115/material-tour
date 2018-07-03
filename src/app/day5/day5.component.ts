@@ -1,3 +1,5 @@
+import { Day5ModalComponent } from './day5-modal/day5-modal.component';
+import { MatDialog } from '@angular/material';
 import { spots } from './../model/spots';
 import { Spot } from './../model/spot';
 import { Component, OnInit } from '@angular/core';
@@ -17,7 +19,7 @@ export class Day5Component implements OnInit {
   isLocation: boolean = false;
   isSpot: boolean = true;
 
-  constructor() { }
+  constructor(public dialog:MatDialog) { }
   watch;
   showGps() {
     if (navigator.geolocation) {
@@ -41,6 +43,9 @@ export class Day5Component implements OnInit {
     }
     this.isLocation = true;
 
+  }
+  openDialog(){
+    this.dialog.open(Day5ModalComponent);
   }
   markers: Spot[];
 

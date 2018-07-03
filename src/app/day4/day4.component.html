@@ -25,27 +25,10 @@
   </mat-grid-tile>
   <mat-grid-tile gutterSize="5px">
     <div>
-      <button mat-mini-fab color="warn">
-        <mat-icon>assignment</mat-icon>
+      <button (click)="openDialog()" mat-mini-fab color="warn">
+        <mat-icon>map</mat-icon>
       </button>
     </div>
-  </mat-grid-tile>
-  <mat-grid-tile colspan="3" rowspan="2" gutterSize="5px">
-    <h4 class="icon-part">
-      <div>東福寺</div>
-      <mat-icon color="accent">directions_subway</mat-icon>
-    </h4>
-    <h5 class="">
-      <div>京阪本線</div>
-      <div>(0:05)</div>
-      ¥150
-      <mat-progress-bar mode="buffer" value="0" bufferValue="0"></mat-progress-bar>
-    </h5>
-    <h4 class="icon-part">
-      <div>祇園四條</div>
-      <mat-icon color="accent">directions_subway</mat-icon>
-    </h4>
-    
   </mat-grid-tile>
   <mat-grid-tile colspan="3">
   </mat-grid-tile>

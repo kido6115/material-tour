@@ -31,11 +31,10 @@
                 <button (click)="showGps()" mat-mini-fab color="primary">
                     <mat-icon>gps_fixed</mat-icon>
                 </button>
-                <button (click)="stopGps()" mat-mini-fab color="warn">
-                        <mat-icon>gps_fixed</mat-icon>
-                    </button>
             </div>
-            <mat-slide-toggle color="primary" (change)="showSuper($event)"><mat-icon>shop</mat-icon>超商、<mat-icon>shopping_cart</mat-icon>超市</mat-slide-toggle>
+            <mat-slide-toggle color="primary" (change)="showSuper($event)">
+                <mat-icon>shop</mat-icon>超商、
+                <mat-icon>shopping_cart</mat-icon>超市</mat-slide-toggle>
             <br>
             <mat-slide-toggle color="primary" (change)="showRoute($event)">民宿路線</mat-slide-toggle>
         </div>

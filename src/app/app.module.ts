@@ -14,6 +14,11 @@ import { Day5Component } from './day5/day5.component';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { ApartmentComponent } from './apartment/apartment.component';
 import { AirPortLineComponent } from './air-port-line/air-port-line.component';
+import { Day2ModalComponent } from './day2/day2-modal/day2-modal.component';
+import { Day3ModalComponent } from './day3/day3-modal/day3-modal.component';
+import { Day4ModalComponent } from './day4/day4-modal/day4-modal.component';
+import { Day5ModalComponent } from './day5/day5-modal/day5-modal.component';
+import { AirPortLineModalComponent } from './air-port-line/air-port-line-modal/air-port-line-modal.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +29,19 @@ import { AirPortLineComponent } from './air-port-line/air-port-line.component';
     Day4Component,
     Day5Component,
     ApartmentComponent,
-    AirPortLineComponent
-  ],
+    AirPortLineComponent,
+    Day2ModalComponent,
+    Day3ModalComponent,
+    Day4ModalComponent,
+    Day5ModalComponent,
+    AirPortLineModalComponent,
+     ],
   imports: [
     BrowserModule,BrowserAnimationsModule, AppRoutingModule,SharedMaterialModule,AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBgkSTUKQ5NYL99GCmZrNPEaXEoNHi2Mq0',
     language: 'zh-TW'}),HttpClientModule,HttpClientJsonpModule
   ],
+  entryComponents:[Day2ModalComponent,Day3ModalComponent,Day4ModalComponent,Day5ModalComponent,AirPortLineModalComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,3 +1,5 @@
+import { MatDialog } from '@angular/material';
+import { Day3ModalComponent } from './day3-modal/day3-modal.component';
 import { spots } from './../model/spots';
 import { Spot } from './../model/spot';
 import { Component, OnInit } from '@angular/core';
@@ -10,13 +12,13 @@ import { Component, OnInit } from '@angular/core';
 export class Day3Component implements OnInit {
   lat: number = 34.684458;
   lng: number = 135.835433;
-  zoomValue: number = 15;
+  zoomValue: number = 14;
   iconUrl: string = "./assets/gps.gif";
   geojson = './assets/bike.json';
   isLocation: boolean = false;
   isSpot: boolean = true;
 
-  constructor() { }
+  constructor(public dialog:MatDialog) { }
   watch;
   showGps() {
     if (navigator.geolocation) {
@@ -40,6 +42,9 @@ export class Day3Component implements OnInit {
     }
     this.isLocation = true;
 
+  }
+  openDialog() {
+    this.dialog.open(Day3ModalComponent);
   }
   markers: Spot[];
 

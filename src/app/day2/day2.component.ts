@@ -1,8 +1,10 @@
+import { Day2ModalComponent } from './day2-modal/day2-modal.component';
 import { spots } from './../model/spots';
 import { HttpClient } from '@angular/common/http';
 import { Spot } from './../model/spot';
 import { Component, OnInit } from '@angular/core';
 import { map } from 'rxjs/operators';
+import { MatDialog } from '@angular/material';
 
 @Component({
   selector: 'app-day2',
@@ -17,8 +19,8 @@ export class Day2Component implements OnInit {
   geojson = './assets/bike.json';
   isLocation: boolean = false;
   isSpot: boolean = true;
-  isRoute:boolean=false;
-  constructor(private httpClient:HttpClient) {
+  isRoute: boolean = false;
+  constructor(private httpClient: HttpClient, public dialog: MatDialog) {
 
   }
 
@@ -38,7 +40,7 @@ export class Day2Component implements OnInit {
         this.lng = +pos.coords.longitude;
         this.lat = +pos.coords.latitude;
         console.log("watch");
-        var id=this.watch;
+        var id = this.watch;
         var stops = document.getElementsByClassName("side");
         for (var i = 0; i < stops.length; i++) {
           stops[i].addEventListener('click', function () {
@@ -63,13 +65,16 @@ export class Day2Component implements OnInit {
     }
 
   }
+  openDialog() {
+    this.dialog.open(Day2ModalComponent);
+  }
   markers: Spot[];
-  bikeJson:Object=null;
+  bikeJson: Object = null;
 
   ngOnInit() {
-    this.getGeoJsonLayer().subscribe(result=>{
+    this.getGeoJsonLayer().subscribe(result => {
       this.bikeJson = result;
-      this.markers=spots;
+      this.markers = spots;
       console.log(result);
     });
   }

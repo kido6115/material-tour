@@ -1,0 +1,11 @@
+
+  .mat-dialog-title{
+    min-width: 300px;
+  }
+  .mat-progress-bar{
+    width: 100px;
+    transform: rotate(90deg);
+}
+h4{
+    text-align: center;
+}

@@ -40,7 +40,7 @@ export class ApartmentComponent implements OnInit {
         this.lng = +pos.coords.longitude;
         this.lat = +pos.coords.latitude;
         console.log("watch");
-        var id=this.watch;
+        var id = this.watch;
         var stops = document.getElementsByClassName("side");
         for (var i = 0; i < stops.length; i++) {
           stops[i].addEventListener('click', function () {

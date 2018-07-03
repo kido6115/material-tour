@@ -1,3 +1,6 @@
+import { Day3Component } from './../day3/day3.component';
+import { Day4ModalComponent } from './day4-modal/day4-modal.component';
+import { MatDialog } from '@angular/material';
 import { spots } from './../model/spots';
 import { Spot } from './../model/spot';
 import { Component, OnInit } from '@angular/core';
@@ -17,7 +20,7 @@ export class Day4Component implements OnInit {
   isLocation: boolean = false;
   isSpot: boolean = true;
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
   watch;
   showGps() {
     if (navigator.geolocation) {
@@ -29,7 +32,7 @@ export class Day4Component implements OnInit {
         this.lng = +pos.coords.longitude;
         this.lat = +pos.coords.latitude;
         console.log("watch");
-        var id=this.watch;
+        var id = this.watch;
         var stops = document.getElementsByClassName("side");
         for (var i = 0; i < stops.length; i++) {
           stops[i].addEventListener('click', function () {
@@ -42,10 +45,13 @@ export class Day4Component implements OnInit {
     this.isLocation = true;
 
   }
-  markers: Spot[];
+  openDialog() {
+    this.dialog.open(Day4ModalComponent); 
+  }
+  markers: Spot[]; 
 
   ngOnInit() {
-    this.markers=spots;
+    this.markers = spots;
 
   }
 }
