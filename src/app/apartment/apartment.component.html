@@ -1,6 +1,6 @@
 <mat-grid-list rowHeight="50px" cols="2">
     <mat-grid-tile colspan="2" rowspan="8">
-        <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoomValue">
+        <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoomValue" [gestureHandling]="gestureHandling">
             <agm-data-layer matBadge="4" matBadgeOverlap="false" [geoJson]="geoJson"></agm-data-layer>
             <div *ngIf="isLocation">
                 <agm-marker [latitude]="lat" [longitude]="lng" [iconUrl]="iconUrl">
@@ -59,7 +59,7 @@
     </mat-grid-tile>
     <mat-grid-tile>
         <button mat-raised-button color="primary">
-            <mat-icon>lock</mat-icon>
+            <mat-icon>vpn_key</mat-icon>
             0123
         </button>
     </mat-grid-tile>

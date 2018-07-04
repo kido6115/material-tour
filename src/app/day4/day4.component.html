@@ -1,6 +1,6 @@
 <mat-grid-list rowHeight="50px" cols="3">
-  <mat-grid-tile colspan="3" rowspan="6" gutterSize="5px">
-    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoomValue">
+  <mat-grid-tile colspan="3" rowspan="8" gutterSize="5px">
+    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoomValue" [gestureHandling]="gestureHandling">
       <div *ngIf="isLocation">
         <agm-marker [latitude]="lat" [longitude]="lng" [iconUrl]="iconUrl">
         </agm-marker>
@@ -30,6 +30,10 @@
       </button>
     </div>
   </mat-grid-tile>
-  <mat-grid-tile colspan="3">
+  <mat-grid-tile rowspan="2" [ngStyle]="{'background-image':'url(./assets/kyoto.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}"
+    colspan="2">
+    <h2>京都</h2>
+  </mat-grid-tile>
+  <mat-grid-tile rowspan="2">
   </mat-grid-tile>
 </mat-grid-list>

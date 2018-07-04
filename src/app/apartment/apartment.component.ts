@@ -17,6 +17,7 @@ export class ApartmentComponent implements OnInit {
   isSuper: boolean = false;
   isRoute: boolean = false;
   isLocation: boolean = false;
+  gestureHandling='greedy';
   constructor(private httpClient: HttpClient) {
 
   }

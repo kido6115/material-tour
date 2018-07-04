@@ -1,6 +1,6 @@
 <mat-grid-list rowHeight="50px" cols="3">
   <mat-grid-tile colspan="3" rowspan="8" gutterSize="5px">
-    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoomValue">
+    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoomValue" [gestureHandling]="gestureHandling">
       <div *ngIf="isLocation">
         <agm-marker [latitude]="lat" [longitude]="lng" [iconUrl]="iconUrl">
         </agm-marker>

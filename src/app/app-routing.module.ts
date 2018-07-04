@@ -7,6 +7,7 @@ import { Day2Component } from './day2/day2.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgModule } from '@angular/core';
 import { RouterModule,Routes, Router} from '@angular/router';
+import { DirectionComponent } from './direction/direction.component';
 
 const routes:Routes=[
 {path:'dashboard',component:DashboardComponent},
@@ -16,6 +17,7 @@ const routes:Routes=[
 {path:'day5',component:Day5Component},
 {path:'day1',component:ApartmentComponent},
 {path:'air-port-line',component:AirPortLineComponent},
+{path:'direction',component:DirectionComponent},
 
 {path:'',redirectTo:'/dashboard',pathMatch:'full'}
 ];

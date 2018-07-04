@@ -1,0 +1,25 @@
+<mat-grid-list rowHeight="50px" cols="3">
+  <mat-grid-tile colspan="3" rowspan="8" gutterSize="5px">
+    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoomValue" [gestureHandling]="gestureHandling">
+      <agm-marker [latitude]="lat" [longitude]="lng" [iconUrl]="iconUrl">
+      </agm-marker>
+      <div *ngIf="isDirect">
+        <agm-direction [panel]="setPanel()" [travelMode]="travelMode" [origin]="origin" [destination]="destination">
+        </agm-direction>
+      </div>
+    </agm-map>
+  </mat-grid-tile>
+  <mat-grid-tile gutterSize="5px">
+  </mat-grid-tile>
+  <mat-grid-tile gutterSize="5px">
+    <div>
+      <button (click)="openDialog()" mat-mini-fab color="warn">
+        <mat-icon>directions</mat-icon>
+      </button>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile gutterSize="5px">
+  </mat-grid-tile>
+  <mat-grid-tile style="overflow: auto" id="myPanel" colspan="3" rowspan="8" gutterSize="5px">
+  </mat-grid-tile>
+</mat-grid-list>

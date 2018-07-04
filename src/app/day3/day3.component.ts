@@ -18,6 +18,7 @@ export class Day3Component implements OnInit {
   geojson = './assets/bike.json';
   isLocation: boolean = false;
   isSpot: boolean = true;
+  gestureHandling='greedy';
 
   constructor(public dialog: MatDialog) { }
   watch;

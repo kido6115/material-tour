@@ -21,6 +21,8 @@ export class Day2Component implements OnInit {
   isLocation: boolean = false;
   isSpot: boolean = true;
   isRoute: boolean = false;
+  gestureHandling='greedy';
+
   constructor(private httpClient: HttpClient, public dialog: MatDialog) {
 
   }

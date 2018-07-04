@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AgmCoreModule } from '@agm/core';
+import { AgmCoreModule, GoogleMapsAPIWrapper } from '@agm/core';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
@@ -20,6 +20,11 @@ import { Day4ModalComponent } from './day4/day4-modal/day4-modal.component';
 import { Day5ModalComponent } from './day5/day5-modal/day5-modal.component';
 import { AirPortLineModalComponent } from './air-port-line/air-port-line-modal/air-port-line-modal.component';
 import { ToDoModalComponent } from './air-port-line/to-do-modal/to-do-modal.component';
+import { DirectionComponent } from './direction/direction.component';
+import { AgmDirectionModule } from 'agm-direction';
+import { DirectionModalComponent } from './direction/direction-modal/direction-modal.component'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -37,14 +42,16 @@ import { ToDoModalComponent } from './air-port-line/to-do-modal/to-do-modal.comp
     Day5ModalComponent,
     AirPortLineModalComponent,
     ToDoModalComponent,
+    DirectionComponent,
+    DirectionModalComponent,
      ],
   imports: [
-    BrowserModule,BrowserAnimationsModule, AppRoutingModule,SharedMaterialModule,AgmCoreModule.forRoot({
+    BrowserModule,BrowserAnimationsModule, AppRoutingModule,SharedMaterialModule,HttpClientModule,HttpClientJsonpModule,FormsModule,ReactiveFormsModule,MatFormFieldModule,AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBgkSTUKQ5NYL99GCmZrNPEaXEoNHi2Mq0',
-    language: 'zh-TW'}),HttpClientModule,HttpClientJsonpModule
+    language: 'zh-TW'}),AgmDirectionModule
   ],
-  entryComponents:[Day2ModalComponent,Day3ModalComponent,Day4ModalComponent,Day5ModalComponent,AirPortLineModalComponent,ToDoModalComponent],
-  providers: [],
+  entryComponents:[Day2ModalComponent,Day3ModalComponent,Day4ModalComponent,Day5ModalComponent,AirPortLineModalComponent,ToDoModalComponent,DirectionModalComponent],
+  providers: [GoogleMapsAPIWrapper],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

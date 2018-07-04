@@ -14,7 +14,7 @@ export class AirPortLineComponent implements OnInit {
   lng: number = 135.539004;
   zoomValue: number = 9;
   iconUrl: string ="./assets/gps.gif";
-
+  gestureHandling='greedy';
   isLocation:boolean=false;
 
   constructor(public dialog:MatDialog) {

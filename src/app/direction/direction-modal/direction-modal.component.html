@@ -1,0 +1,16 @@
+<h2 mat-dialog-title>
+  輸入目的地
+</h2>
+  <mat-dialog-content class="post-form">
+    <mat-form-field>
+      <input matInput placeholder="目的地" [(ngModel)]="title" />
+    </mat-form-field>
+  </mat-dialog-content>
+  <h4>快速選擇</h4>
+  <mat-chip-list>
+    <mat-chip value="日本京都府京都市 Higashiyama Ward, Sennyuji Torincho, Sennyugi Moegi" color="primary" (click)="fast($event)" selected="true">民宿</mat-chip>
+  </mat-chip-list>
+  <mat-dialog-actions>
+    <button mat-button color="primary" mat-dialog-close (click)="doPost()">導航</button>
+    <button mat-button mat-dialog-close color="warn">取消</button>
+  </mat-dialog-actions>

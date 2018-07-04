@@ -1,28 +1,31 @@
-import { Day3Component } from './../day3/day3.component';
-import { Day4ModalComponent } from './day4-modal/day4-modal.component';
+import { DirectionModalComponent } from './direction-modal/direction-modal.component';
 import { MatDialog } from '@angular/material';
-import { spots } from './../model/spots';
-import { Spot } from './../model/spot';
 import { Component, OnInit } from '@angular/core';
-import { ObserveOnMessage } from 'rxjs/internal/operators/observeOn';
-import { of, Observable } from 'rxjs';
 
 @Component({
-  selector: 'app-day4',
-  templateUrl: './day4.component.html',
-  styleUrls: ['./day4.component.css']
+  selector: 'app-direction',
+  templateUrl: './direction.component.html',
+  styleUrls: ['./direction.component.css']
 })
-export class Day4Component implements OnInit {
 
-  lat: number = 34.999287;
-  lng: number = 135.771442;
+export class DirectionComponent implements OnInit {
+
+
+  lat: number;
+  lng: number;
   zoomValue: number = 14;
   iconUrl: string = "./assets/gps.gif";
   geojson = './assets/bike.json';
   isLocation: boolean = false;
-  isSpot: boolean = true;
-  gestureHandling='greedy';
-
+  gestureHandling = 'greedy';
+  origin: any;
+  destination: any;
+  travelMode = 'WALKING';
+  title;
+  isDirect = false;
+  // public transitOptions: any = {
+  //   modes: ['SUBWAY']
+  // }
   constructor(public dialog: MatDialog) { }
   watch;
   showGps() {
@@ -48,16 +51,24 @@ export class Day4Component implements OnInit {
     this.isLocation = true;
 
   }
+  public setPanel() {
+    return document.querySelector('#myPanel');
+  }
   openDialog() {
-    this.dialog.open(Day4ModalComponent);
+    let dialogRef = this.dialog.open(DirectionModalComponent);
+    const sub = dialogRef.componentInstance.onAdd
+      .subscribe((data) => {
+        this.origin={lat:this.lat,lng:this.lng};
+        this.destination = data;
+        if (this.destination) {
+          this.isDirect = true;
+        }
+      });
+    dialogRef.afterClosed().subscribe(() => {
+      sub.unsubscribe();
+    });
   }
-  getSpots(): Observable<Spot[]> {
-    return of(spots);
-  }
-  markers: Spot[];
-
   ngOnInit() {
-    this.getSpots().subscribe(spots => { this.markers = spots });
-
+    this.showGps();
   }
 }
