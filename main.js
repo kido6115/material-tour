@@ -623,12 +623,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _direction_direction_modal_direction_modal_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./direction/direction-modal/direction-modal.component */ "./src/app/direction/direction-modal/direction-modal.component.ts");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _day2_day2_detail_day2_detail_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./day2/day2-detail/day2-detail.component */ "./src/app/day2/day2-detail/day2-detail.component.ts");
+/* harmony import */ var _day2_day2_detail1_day2_detail1_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./day2/day2-detail1/day2-detail1.component */ "./src/app/day2/day2-detail1/day2-detail1.component.ts");
+/* harmony import */ var _day3_day3_detail_day3_detail_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./day3/day3-detail/day3-detail.component */ "./src/app/day3/day3-detail/day3-detail.component.ts");
+/* harmony import */ var _day3_day3_detail1_day3_detail1_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./day3/day3-detail1/day3-detail1.component */ "./src/app/day3/day3-detail1/day3-detail1.component.ts");
+/* harmony import */ var _day3_day3_detail2_day3_detail2_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./day3/day3-detail2/day3-detail2.component */ "./src/app/day3/day3-detail2/day3-detail2.component.ts");
+/* harmony import */ var _day4_day4_detail_day4_detail_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./day4/day4-detail/day4-detail.component */ "./src/app/day4/day4-detail/day4-detail.component.ts");
+/* harmony import */ var _day5_day5_detail_day5_detail_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./day5/day5-detail/day5-detail.component */ "./src/app/day5/day5-detail/day5-detail.component.ts");
+/* harmony import */ var _day5_day5_detail1_day5_detail1_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./day5/day5-detail1/day5-detail1.component */ "./src/app/day5/day5-detail1/day5-detail1.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
+
+
+
+
 
 
 
@@ -677,6 +693,14 @@ var AppModule = /** @class */ (function () {
                 _air_port_line_to_do_modal_to_do_modal_component__WEBPACK_IMPORTED_MODULE_20__["ToDoModalComponent"],
                 _direction_direction_component__WEBPACK_IMPORTED_MODULE_21__["DirectionComponent"],
                 _direction_direction_modal_direction_modal_component__WEBPACK_IMPORTED_MODULE_23__["DirectionModalComponent"],
+                _day2_day2_detail_day2_detail_component__WEBPACK_IMPORTED_MODULE_26__["Day2DetailComponent"],
+                _day2_day2_detail1_day2_detail1_component__WEBPACK_IMPORTED_MODULE_27__["Day2Detail1Component"],
+                _day3_day3_detail_day3_detail_component__WEBPACK_IMPORTED_MODULE_28__["Day3DetailComponent"],
+                _day3_day3_detail1_day3_detail1_component__WEBPACK_IMPORTED_MODULE_29__["Day3Detail1Component"],
+                _day3_day3_detail2_day3_detail2_component__WEBPACK_IMPORTED_MODULE_30__["Day3Detail2Component"],
+                _day4_day4_detail_day4_detail_component__WEBPACK_IMPORTED_MODULE_31__["Day4DetailComponent"],
+                _day5_day5_detail_day5_detail_component__WEBPACK_IMPORTED_MODULE_32__["Day5DetailComponent"],
+                _day5_day5_detail1_day5_detail1_component__WEBPACK_IMPORTED_MODULE_33__["Day5Detail1Component"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__["BrowserAnimationsModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"], _shared_material_shared_material_module__WEBPACK_IMPORTED_MODULE_7__["SharedMaterialModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_12__["HttpClientModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_12__["HttpClientJsonpModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_24__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_24__["ReactiveFormsModule"], _angular_material__WEBPACK_IMPORTED_MODULE_25__["MatFormFieldModule"], _agm_core__WEBPACK_IMPORTED_MODULE_3__["AgmCoreModule"].forRoot({
@@ -684,7 +708,14 @@ var AppModule = /** @class */ (function () {
                     language: 'zh-TW'
                 }), agm_direction__WEBPACK_IMPORTED_MODULE_22__["AgmDirectionModule"]
             ],
-            entryComponents: [_day2_day2_modal_day2_modal_component__WEBPACK_IMPORTED_MODULE_15__["Day2ModalComponent"], _day3_day3_modal_day3_modal_component__WEBPACK_IMPORTED_MODULE_16__["Day3ModalComponent"], _day4_day4_modal_day4_modal_component__WEBPACK_IMPORTED_MODULE_17__["Day4ModalComponent"], _day5_day5_modal_day5_modal_component__WEBPACK_IMPORTED_MODULE_18__["Day5ModalComponent"], _air_port_line_air_port_line_modal_air_port_line_modal_component__WEBPACK_IMPORTED_MODULE_19__["AirPortLineModalComponent"], _air_port_line_to_do_modal_to_do_modal_component__WEBPACK_IMPORTED_MODULE_20__["ToDoModalComponent"], _direction_direction_modal_direction_modal_component__WEBPACK_IMPORTED_MODULE_23__["DirectionModalComponent"]],
+            entryComponents: [_day2_day2_modal_day2_modal_component__WEBPACK_IMPORTED_MODULE_15__["Day2ModalComponent"], _day3_day3_modal_day3_modal_component__WEBPACK_IMPORTED_MODULE_16__["Day3ModalComponent"], _day4_day4_modal_day4_modal_component__WEBPACK_IMPORTED_MODULE_17__["Day4ModalComponent"], _day5_day5_modal_day5_modal_component__WEBPACK_IMPORTED_MODULE_18__["Day5ModalComponent"], _air_port_line_air_port_line_modal_air_port_line_modal_component__WEBPACK_IMPORTED_MODULE_19__["AirPortLineModalComponent"], _air_port_line_to_do_modal_to_do_modal_component__WEBPACK_IMPORTED_MODULE_20__["ToDoModalComponent"], _direction_direction_modal_direction_modal_component__WEBPACK_IMPORTED_MODULE_23__["DirectionModalComponent"], _day2_day2_detail_day2_detail_component__WEBPACK_IMPORTED_MODULE_26__["Day2DetailComponent"],
+                _day2_day2_detail1_day2_detail1_component__WEBPACK_IMPORTED_MODULE_27__["Day2Detail1Component"],
+                _day3_day3_detail_day3_detail_component__WEBPACK_IMPORTED_MODULE_28__["Day3DetailComponent"],
+                _day3_day3_detail1_day3_detail1_component__WEBPACK_IMPORTED_MODULE_29__["Day3Detail1Component"],
+                _day3_day3_detail2_day3_detail2_component__WEBPACK_IMPORTED_MODULE_30__["Day3Detail2Component"],
+                _day4_day4_detail_day4_detail_component__WEBPACK_IMPORTED_MODULE_31__["Day4DetailComponent"],
+                _day5_day5_detail_day5_detail_component__WEBPACK_IMPORTED_MODULE_32__["Day5DetailComponent"],
+                _day5_day5_detail1_day5_detail1_component__WEBPACK_IMPORTED_MODULE_33__["Day5Detail1Component"],],
             providers: [_agm_core__WEBPACK_IMPORTED_MODULE_3__["GoogleMapsAPIWrapper"]],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
         })
@@ -760,6 +791,132 @@ var DashboardComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], DashboardComponent);
     return DashboardComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/day2/day2-detail/day2-detail.component.css":
+/*!************************************************************!*\
+  !*** ./src/app/day2/day2-detail/day2-detail.component.css ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/day2/day2-detail/day2-detail.component.html":
+/*!*************************************************************!*\
+  !*** ./src/app/day2/day2-detail/day2-detail.component.html ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h2 mat-dialog-title>\n  待辦事項\n</h2>\n\n<mat-dialog-content class=\"post-form\">\n    <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">京都<mat-icon>swap_horiz</mat-icon>機場來回車票</mat-list-item>\n        <mat-list-item role=\"listitem\">嵐山小火車車票</mat-list-item>\n        <mat-list-item role=\"listitem\">可先行機場附近吃飯</mat-list-item>\n      </mat-list>\n</mat-dialog-content>\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close color=\"warn\">取消</button>\n</mat-dialog-actions>"
+
+/***/ }),
+
+/***/ "./src/app/day2/day2-detail/day2-detail.component.ts":
+/*!***********************************************************!*\
+  !*** ./src/app/day2/day2-detail/day2-detail.component.ts ***!
+  \***********************************************************/
+/*! exports provided: Day2DetailComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Day2DetailComponent", function() { return Day2DetailComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var Day2DetailComponent = /** @class */ (function () {
+    function Day2DetailComponent() {
+    }
+    Day2DetailComponent.prototype.ngOnInit = function () {
+    };
+    Day2DetailComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-day2-detail',
+            template: __webpack_require__(/*! ./day2-detail.component.html */ "./src/app/day2/day2-detail/day2-detail.component.html"),
+            styles: [__webpack_require__(/*! ./day2-detail.component.css */ "./src/app/day2/day2-detail/day2-detail.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], Day2DetailComponent);
+    return Day2DetailComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/day2/day2-detail1/day2-detail1.component.css":
+/*!**************************************************************!*\
+  !*** ./src/app/day2/day2-detail1/day2-detail1.component.css ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/day2/day2-detail1/day2-detail1.component.html":
+/*!***************************************************************!*\
+  !*** ./src/app/day2/day2-detail1/day2-detail1.component.html ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h2 mat-dialog-title>\n  待辦事項\n</h2>\n\n<mat-dialog-content class=\"post-form\">\n    <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">京都<mat-icon>swap_horiz</mat-icon>機場來回車票</mat-list-item>\n        <mat-list-item role=\"listitem\">嵐山小火車車票</mat-list-item>\n        <mat-list-item role=\"listitem\">可先行機場附近吃飯</mat-list-item>\n      </mat-list>\n</mat-dialog-content>\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close color=\"warn\">取消</button>\n</mat-dialog-actions>"
+
+/***/ }),
+
+/***/ "./src/app/day2/day2-detail1/day2-detail1.component.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/day2/day2-detail1/day2-detail1.component.ts ***!
+  \*************************************************************/
+/*! exports provided: Day2Detail1Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Day2Detail1Component", function() { return Day2Detail1Component; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var Day2Detail1Component = /** @class */ (function () {
+    function Day2Detail1Component() {
+    }
+    Day2Detail1Component.prototype.ngOnInit = function () {
+    };
+    Day2Detail1Component = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-day2-detail1',
+            template: __webpack_require__(/*! ./day2-detail1.component.html */ "./src/app/day2/day2-detail1/day2-detail1.component.html"),
+            styles: [__webpack_require__(/*! ./day2-detail1.component.css */ "./src/app/day2/day2-detail1/day2-detail1.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], Day2Detail1Component);
+    return Day2Detail1Component;
 }());
 
 
@@ -847,7 +1004,7 @@ module.exports = "agm-map {\r\n    height: 100%;\r\n    width: 99.5%;\r\n}\r\n.m
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-grid-list rowHeight=\"50px\" cols=\"3\">\n  <mat-grid-tile colspan=\"3\" rowspan=\"8\" gutterSize=\"5px\">\n    <agm-map [latitude]=\"lat\" [longitude]=\"lng\" [zoom]=\"zoomValue\" [gestureHandling]=\"gestureHandling\">\n      <div *ngIf=\"isRoute\">\n        <agm-data-layer [geoJson]=\"bikeJson\"></agm-data-layer>\n      </div>\n      <div *ngIf=\"isLocation\">\n        <agm-marker [latitude]=\"lat\" [longitude]=\"lng\" [iconUrl]=\"iconUrl\">\n        </agm-marker>\n      </div>\n      <div *ngIf=\"isSpot\">\n        <agm-marker *ngFor=\"let m of markers\" [latitude]=\"m.lat\" [longitude]=\"m.lng\">\n          <agm-info-window>\n            <strong style=\"color: black\">{{m.label}}</strong>\n          </agm-info-window>\n        </agm-marker>\n      </div>\n    </agm-map>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <div>\n      <button (click)=\"showGps()\" mat-mini-fab color=\"primary\">\n        <mat-icon>gps_fixed</mat-icon>\n      </button>\n    </div>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <mat-slide-toggle color=\"primary\" (change)=\"showRoute($event)\">腳踏車路線</mat-slide-toggle>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <div>\n      <button (click)=\"openDialog()\" mat-mini-fab color=\"warn\">\n        <mat-icon>map</mat-icon>\n      </button>\n    </div>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\" [ngStyle]=\"{'background-image':'url(./assets/little_train.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}\" colspan=\"2\">\n    <h2>嵐山小火車</h2>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\" >\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\" [ngStyle]=\"{'background-image':'url(./assets/arashi_yama.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}\" colspan=\"2\">\n    <h2>嵐山</h2>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\" >\n  </mat-grid-tile>\n</mat-grid-list>"
+module.exports = "<mat-grid-list rowHeight=\"50px\" cols=\"3\">\n  <mat-grid-tile colspan=\"3\" rowspan=\"8\" gutterSize=\"5px\">\n    <agm-map [latitude]=\"lat\" [longitude]=\"lng\" [zoom]=\"zoomValue\" [gestureHandling]=\"gestureHandling\">\n      <div *ngIf=\"isRoute\">\n        <agm-data-layer [geoJson]=\"bikeJson\"></agm-data-layer>\n      </div>\n      <div *ngIf=\"isLocation\">\n        <agm-marker [latitude]=\"lat\" [longitude]=\"lng\" [iconUrl]=\"iconUrl\">\n        </agm-marker>\n      </div>\n      <div *ngIf=\"isSpot\">\n        <agm-marker *ngFor=\"let m of markers\" [latitude]=\"m.lat\" [longitude]=\"m.lng\">\n          <agm-info-window>\n            <strong style=\"color: black\">{{m.label}}</strong>\n          </agm-info-window>\n        </agm-marker>\n      </div>\n    </agm-map>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <div>\n      <button (click)=\"showGps()\" mat-mini-fab color=\"primary\">\n        <mat-icon>gps_fixed</mat-icon>\n      </button>\n    </div>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <mat-slide-toggle color=\"primary\" (change)=\"showRoute($event)\">腳踏車路線</mat-slide-toggle>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <div>\n      <button (click)=\"openDialog()\" mat-mini-fab color=\"warn\">\n        <mat-icon>map</mat-icon>\n      </button>\n    </div>\n  </mat-grid-tile>\n  <mat-grid-tile (click)=\"changeLatLng(35.012598,135.607218)\" rowspan=\"2\" [ngStyle]=\"{'background-image':'url(./assets/little_train.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}\"\n    colspan=\"2\">\n    <h2>嵐山小火車</h2>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\">\n    <button (click)=\"openToDoDialog()\" mat-mini-fab color=\"warn\">\n      <mat-icon>assignment</mat-icon>\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile (click)=\"changeLatLng(35.015127,135.677728)\" rowspan=\"2\" [ngStyle]=\"{'background-image':'url(./assets/arashi_yama.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}\"\n    colspan=\"2\">\n    <h2>嵐山</h2>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\">\n    <button (click)=\"openToDoDialog1()\" mat-mini-fab color=\"warn\">\n      <mat-icon>assignment</mat-icon>\n    </button>\n  </mat-grid-tile>\n</mat-grid-list>"
 
 /***/ }),
 
@@ -861,13 +1018,15 @@ module.exports = "<mat-grid-list rowHeight=\"50px\" cols=\"3\">\n  <mat-grid-til
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Day2Component", function() { return Day2Component; });
-/* harmony import */ var _day2_modal_day2_modal_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./day2-modal/day2-modal.component */ "./src/app/day2/day2-modal/day2-modal.component.ts");
-/* harmony import */ var _model_spots__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../model/spots */ "./src/app/model/spots.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var _day2_detail_day2_detail_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./day2-detail/day2-detail.component */ "./src/app/day2/day2-detail/day2-detail.component.ts");
+/* harmony import */ var _day2_modal_day2_modal_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./day2-modal/day2-modal.component */ "./src/app/day2/day2-modal/day2-modal.component.ts");
+/* harmony import */ var _model_spots__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../model/spots */ "./src/app/model/spots.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var _day2_detail1_day2_detail1_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./day2-detail1/day2-detail1.component */ "./src/app/day2/day2-detail1/day2-detail1.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -877,6 +1036,8 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
+
 
 
 
@@ -900,12 +1061,12 @@ var Day2Component = /** @class */ (function () {
         this.bikeJson = null;
     }
     Day2Component.prototype.getGeoJsonLayer = function () {
-        return this.httpClient.get(this.geojson).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (res) {
+        return this.httpClient.get(this.geojson).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["map"])(function (res) {
             return res;
         }));
     };
     Day2Component.prototype.getSpots = function () {
-        return Object(rxjs__WEBPACK_IMPORTED_MODULE_6__["of"])(_model_spots__WEBPACK_IMPORTED_MODULE_1__["spots"]);
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_7__["of"])(_model_spots__WEBPACK_IMPORTED_MODULE_2__["spots"]);
     };
     Day2Component.prototype.showGps = function () {
         var _this = this;
@@ -944,7 +1105,17 @@ var Day2Component = /** @class */ (function () {
         }
     };
     Day2Component.prototype.openDialog = function () {
-        this.dialog.open(_day2_modal_day2_modal_component__WEBPACK_IMPORTED_MODULE_0__["Day2ModalComponent"]);
+        this.dialog.open(_day2_modal_day2_modal_component__WEBPACK_IMPORTED_MODULE_1__["Day2ModalComponent"]);
+    };
+    Day2Component.prototype.changeLatLng = function (lat, lng) {
+        this.lat = +lat;
+        this.lng = +lng;
+    };
+    Day2Component.prototype.openToDoDialog = function () {
+        this.dialog.open(_day2_detail_day2_detail_component__WEBPACK_IMPORTED_MODULE_0__["Day2DetailComponent"]);
+    };
+    Day2Component.prototype.openToDoDialog1 = function () {
+        this.dialog.open(_day2_detail1_day2_detail1_component__WEBPACK_IMPORTED_MODULE_8__["Day2Detail1Component"]);
     };
     Day2Component.prototype.ngOnInit = function () {
         var _this = this;
@@ -955,14 +1126,203 @@ var Day2Component = /** @class */ (function () {
         this.getSpots().subscribe(function (spots) { _this.markers = spots; });
     };
     Day2Component = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_4__["Component"])({
             selector: 'app-day2',
             template: __webpack_require__(/*! ./day2.component.html */ "./src/app/day2/day2.component.html"),
             styles: [__webpack_require__(/*! ./day2.component.css */ "./src/app/day2/day2.component.css")]
         }),
-        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"], _angular_material__WEBPACK_IMPORTED_MODULE_5__["MatDialog"]])
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"], _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatDialog"]])
     ], Day2Component);
     return Day2Component;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/day3/day3-detail/day3-detail.component.css":
+/*!************************************************************!*\
+  !*** ./src/app/day3/day3-detail/day3-detail.component.css ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/day3/day3-detail/day3-detail.component.html":
+/*!*************************************************************!*\
+  !*** ./src/app/day3/day3-detail/day3-detail.component.html ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h2 mat-dialog-title>\n  待辦事項\n</h2>\n\n<mat-dialog-content class=\"post-form\">\n    <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">京都<mat-icon>swap_horiz</mat-icon>機場來回車票</mat-list-item>\n        <mat-list-item role=\"listitem\">嵐山小火車車票</mat-list-item>\n        <mat-list-item role=\"listitem\">可先行機場附近吃飯</mat-list-item>\n      </mat-list>\n</mat-dialog-content>\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close color=\"warn\">取消</button>\n</mat-dialog-actions>"
+
+/***/ }),
+
+/***/ "./src/app/day3/day3-detail/day3-detail.component.ts":
+/*!***********************************************************!*\
+  !*** ./src/app/day3/day3-detail/day3-detail.component.ts ***!
+  \***********************************************************/
+/*! exports provided: Day3DetailComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Day3DetailComponent", function() { return Day3DetailComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var Day3DetailComponent = /** @class */ (function () {
+    function Day3DetailComponent() {
+    }
+    Day3DetailComponent.prototype.ngOnInit = function () {
+    };
+    Day3DetailComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-day3-detail',
+            template: __webpack_require__(/*! ./day3-detail.component.html */ "./src/app/day3/day3-detail/day3-detail.component.html"),
+            styles: [__webpack_require__(/*! ./day3-detail.component.css */ "./src/app/day3/day3-detail/day3-detail.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], Day3DetailComponent);
+    return Day3DetailComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/day3/day3-detail1/day3-detail1.component.css":
+/*!**************************************************************!*\
+  !*** ./src/app/day3/day3-detail1/day3-detail1.component.css ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/day3/day3-detail1/day3-detail1.component.html":
+/*!***************************************************************!*\
+  !*** ./src/app/day3/day3-detail1/day3-detail1.component.html ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h2 mat-dialog-title>\n  待辦事項\n</h2>\n\n<mat-dialog-content class=\"post-form\">\n    <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">京都<mat-icon>swap_horiz</mat-icon>機場來回車票</mat-list-item>\n        <mat-list-item role=\"listitem\">嵐山小火車車票</mat-list-item>\n        <mat-list-item role=\"listitem\">可先行機場附近吃飯</mat-list-item>\n      </mat-list>\n</mat-dialog-content>\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close color=\"warn\">取消</button>\n</mat-dialog-actions>"
+
+/***/ }),
+
+/***/ "./src/app/day3/day3-detail1/day3-detail1.component.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/day3/day3-detail1/day3-detail1.component.ts ***!
+  \*************************************************************/
+/*! exports provided: Day3Detail1Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Day3Detail1Component", function() { return Day3Detail1Component; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var Day3Detail1Component = /** @class */ (function () {
+    function Day3Detail1Component() {
+    }
+    Day3Detail1Component.prototype.ngOnInit = function () {
+    };
+    Day3Detail1Component = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-day3-detail1',
+            template: __webpack_require__(/*! ./day3-detail1.component.html */ "./src/app/day3/day3-detail1/day3-detail1.component.html"),
+            styles: [__webpack_require__(/*! ./day3-detail1.component.css */ "./src/app/day3/day3-detail1/day3-detail1.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], Day3Detail1Component);
+    return Day3Detail1Component;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/day3/day3-detail2/day3-detail2.component.css":
+/*!**************************************************************!*\
+  !*** ./src/app/day3/day3-detail2/day3-detail2.component.css ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/day3/day3-detail2/day3-detail2.component.html":
+/*!***************************************************************!*\
+  !*** ./src/app/day3/day3-detail2/day3-detail2.component.html ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  day3-detail2 works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/day3/day3-detail2/day3-detail2.component.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/day3/day3-detail2/day3-detail2.component.ts ***!
+  \*************************************************************/
+/*! exports provided: Day3Detail2Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Day3Detail2Component", function() { return Day3Detail2Component; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var Day3Detail2Component = /** @class */ (function () {
+    function Day3Detail2Component() {
+    }
+    Day3Detail2Component.prototype.ngOnInit = function () {
+    };
+    Day3Detail2Component = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-day3-detail2',
+            template: __webpack_require__(/*! ./day3-detail2.component.html */ "./src/app/day3/day3-detail2/day3-detail2.component.html"),
+            styles: [__webpack_require__(/*! ./day3-detail2.component.css */ "./src/app/day3/day3-detail2/day3-detail2.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], Day3Detail2Component);
+    return Day3Detail2Component;
 }());
 
 
@@ -1050,7 +1410,7 @@ module.exports = "agm-map {\r\n    height: 100%;\r\n    width: 99.5%;\r\n}\r\n.m
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-grid-list rowHeight=\"50px\" cols=\"3\">\n  <mat-grid-tile colspan=\"3\" rowspan=\"8\" gutterSize=\"5px\">\n    <agm-map [latitude]=\"lat\" [longitude]=\"lng\" [zoom]=\"zoomValue\" [gestureHandling]=\"gestureHandling\">\n      <div *ngIf=\"isLocation\">\n        <agm-marker [latitude]=\"lat\" [longitude]=\"lng\" [iconUrl]=\"iconUrl\">\n        </agm-marker>\n      </div>\n      <div *ngIf=\"isSpot\">\n        <agm-marker *ngFor=\"let m of markers\" [latitude]=\"m.lat\" [longitude]=\"m.lng\">\n          <agm-info-window>\n            <strong style=\"color: black\">{{m.label}}</strong>\n          </agm-info-window>\n        </agm-marker>\n      </div>\n    </agm-map>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <div>\n      <button (click)=\"showGps()\" mat-mini-fab color=\"primary\">\n        <mat-icon>gps_fixed</mat-icon>\n      </button>\n    </div>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <div>\n      <button (click)=\"openDialog()\" mat-mini-fab color=\"warn\">\n        <mat-icon>map</mat-icon>\n      </button>\n    </div>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\" [ngStyle]=\"{'background-image':'url(./assets/nara.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}\" colspan=\"2\">\n    <h2>奈良</h2>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\" >\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\" [ngStyle]=\"{'background-image':'url(./assets/uji.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}\" colspan=\"2\">\n    <h2>宇治</h2>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\" >\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\" [ngStyle]=\"{'background-image':'url(./assets/fushimi.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}\" colspan=\"2\">\n    <h2>稻荷神社</h2>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\" >\n  </mat-grid-tile>\n</mat-grid-list>"
+module.exports = "<mat-grid-list rowHeight=\"50px\" cols=\"3\">\n  <mat-grid-tile colspan=\"3\" rowspan=\"8\" gutterSize=\"5px\">\n    <agm-map [latitude]=\"lat\" [longitude]=\"lng\" [zoom]=\"zoomValue\" [gestureHandling]=\"gestureHandling\">\n      <div *ngIf=\"isLocation\">\n        <agm-marker [latitude]=\"lat\" [longitude]=\"lng\" [iconUrl]=\"iconUrl\">\n        </agm-marker>\n      </div>\n      <div *ngIf=\"isSpot\">\n        <agm-marker *ngFor=\"let m of markers\" [latitude]=\"m.lat\" [longitude]=\"m.lng\">\n          <agm-info-window>\n            <strong style=\"color: black\">{{m.label}}</strong>\n          </agm-info-window>\n        </agm-marker>\n      </div>\n    </agm-map>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <div>\n      <button (click)=\"showGps()\" mat-mini-fab color=\"primary\">\n        <mat-icon>gps_fixed</mat-icon>\n      </button>\n    </div>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <div>\n      <button (click)=\"openDialog()\" mat-mini-fab color=\"warn\">\n        <mat-icon>map</mat-icon>\n      </button>\n    </div>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\" (click)=\"changeLatLng(34.684458,135.835433)\" [ngStyle]=\"{'background-image':'url(./assets/nara.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}\"\n    colspan=\"2\">\n    <h2>奈良</h2>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\">\n    <button (click)=\"openToDoDialog()\" mat-mini-fab color=\"warn\">\n      <mat-icon>assignment</mat-icon>\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\" (click)=\"changeLatLng(34.891111,135.806665)\" [ngStyle]=\"{'background-image':'url(./assets/uji.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}\"\n    colspan=\"2\">\n    <h2>宇治</h2>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\">\n    <button (click)=\"openToDoDialog1()\" mat-mini-fab color=\"warn\">\n      <mat-icon>assignment</mat-icon>\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\" (click)=\"changeLatLng(34.967123,135.772629)\" [ngStyle]=\"{'background-image':'url(./assets/fushimi.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}\"\n    colspan=\"2\">\n    <h2>稻荷神社</h2>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\">\n    <button (click)=\"openToDoDialog2()\" mat-mini-fab color=\"warn\">\n      <mat-icon>assignment</mat-icon>\n    </button>\n  </mat-grid-tile>\n</mat-grid-list>"
 
 /***/ }),
 
@@ -1064,11 +1424,14 @@ module.exports = "<mat-grid-list rowHeight=\"50px\" cols=\"3\">\n  <mat-grid-til
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Day3Component", function() { return Day3Component; });
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _day3_modal_day3_modal_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./day3-modal/day3-modal.component */ "./src/app/day3/day3-modal/day3-modal.component.ts");
-/* harmony import */ var _model_spots__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../model/spots */ "./src/app/model/spots.ts");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _day3_detail2_day3_detail2_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./day3-detail2/day3-detail2.component */ "./src/app/day3/day3-detail2/day3-detail2.component.ts");
+/* harmony import */ var _day3_detail_day3_detail_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./day3-detail/day3-detail.component */ "./src/app/day3/day3-detail/day3-detail.component.ts");
+/* harmony import */ var _day3_detail1_day3_detail1_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./day3-detail1/day3-detail1.component */ "./src/app/day3/day3-detail1/day3-detail1.component.ts");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _day3_modal_day3_modal_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./day3-modal/day3-modal.component */ "./src/app/day3/day3-modal/day3-modal.component.ts");
+/* harmony import */ var _model_spots__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../model/spots */ "./src/app/model/spots.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1078,6 +1441,9 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
+
+
 
 
 
@@ -1119,24 +1485,100 @@ var Day3Component = /** @class */ (function () {
         this.isLocation = true;
     };
     Day3Component.prototype.openDialog = function () {
-        this.dialog.open(_day3_modal_day3_modal_component__WEBPACK_IMPORTED_MODULE_2__["Day3ModalComponent"]);
+        this.dialog.open(_day3_modal_day3_modal_component__WEBPACK_IMPORTED_MODULE_5__["Day3ModalComponent"]);
     };
     Day3Component.prototype.getSpots = function () {
-        return Object(rxjs__WEBPACK_IMPORTED_MODULE_0__["of"])(_model_spots__WEBPACK_IMPORTED_MODULE_3__["spots"]);
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(_model_spots__WEBPACK_IMPORTED_MODULE_6__["spots"]);
+    };
+    Day3Component.prototype.changeLatLng = function (lat, lng) {
+        this.lat = +lat;
+        this.lng = +lng;
+    };
+    Day3Component.prototype.openToDoDialog = function () {
+        this.dialog.open(_day3_detail_day3_detail_component__WEBPACK_IMPORTED_MODULE_1__["Day3DetailComponent"]);
+    };
+    Day3Component.prototype.openToDoDialog1 = function () {
+        this.dialog.open(_day3_detail1_day3_detail1_component__WEBPACK_IMPORTED_MODULE_2__["Day3Detail1Component"]);
+    };
+    Day3Component.prototype.openToDoDialog2 = function () {
+        this.dialog.open(_day3_detail2_day3_detail2_component__WEBPACK_IMPORTED_MODULE_0__["Day3Detail2Component"]);
     };
     Day3Component.prototype.ngOnInit = function () {
         var _this = this;
         this.getSpots().subscribe(function (spots) { _this.markers = spots; });
     };
     Day3Component = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_4__["Component"])({
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_7__["Component"])({
             selector: 'app-day3',
             template: __webpack_require__(/*! ./day3.component.html */ "./src/app/day3/day3.component.html"),
             styles: [__webpack_require__(/*! ./day3.component.css */ "./src/app/day3/day3.component.css")]
         }),
-        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_1__["MatDialog"]])
+        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_4__["MatDialog"]])
     ], Day3Component);
     return Day3Component;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/day4/day4-detail/day4-detail.component.css":
+/*!************************************************************!*\
+  !*** ./src/app/day4/day4-detail/day4-detail.component.css ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/day4/day4-detail/day4-detail.component.html":
+/*!*************************************************************!*\
+  !*** ./src/app/day4/day4-detail/day4-detail.component.html ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h2 mat-dialog-title>\n  待辦事項\n</h2>\n\n<mat-dialog-content class=\"post-form\">\n    <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">京都<mat-icon>swap_horiz</mat-icon>機場來回車票</mat-list-item>\n        <mat-list-item role=\"listitem\">嵐山小火車車票</mat-list-item>\n        <mat-list-item role=\"listitem\">可先行機場附近吃飯</mat-list-item>\n      </mat-list>\n</mat-dialog-content>\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close color=\"warn\">取消</button>\n</mat-dialog-actions>"
+
+/***/ }),
+
+/***/ "./src/app/day4/day4-detail/day4-detail.component.ts":
+/*!***********************************************************!*\
+  !*** ./src/app/day4/day4-detail/day4-detail.component.ts ***!
+  \***********************************************************/
+/*! exports provided: Day4DetailComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Day4DetailComponent", function() { return Day4DetailComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var Day4DetailComponent = /** @class */ (function () {
+    function Day4DetailComponent() {
+    }
+    Day4DetailComponent.prototype.ngOnInit = function () {
+    };
+    Day4DetailComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-day4-detail',
+            template: __webpack_require__(/*! ./day4-detail.component.html */ "./src/app/day4/day4-detail/day4-detail.component.html"),
+            styles: [__webpack_require__(/*! ./day4-detail.component.css */ "./src/app/day4/day4-detail/day4-detail.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], Day4DetailComponent);
+    return Day4DetailComponent;
 }());
 
 
@@ -1224,7 +1666,7 @@ module.exports = "agm-map {\r\n    height: 100%;\r\n    width: 99.5%;\r\n}\r\n.m
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-grid-list rowHeight=\"50px\" cols=\"3\">\n  <mat-grid-tile colspan=\"3\" rowspan=\"8\" gutterSize=\"5px\">\n    <agm-map [latitude]=\"lat\" [longitude]=\"lng\" [zoom]=\"zoomValue\" [gestureHandling]=\"gestureHandling\">\n      <div *ngIf=\"isLocation\">\n        <agm-marker [latitude]=\"lat\" [longitude]=\"lng\" [iconUrl]=\"iconUrl\">\n        </agm-marker>\n      </div>\n      <div *ngIf=\"isSpot\">\n        <agm-marker *ngFor=\"let m of markers\" [latitude]=\"m.lat\" [longitude]=\"m.lng\">\n          <agm-info-window>\n            <strong style=\"color: black\">{{m.label}}</strong>\n          </agm-info-window>\n        </agm-marker>\n      </div>\n    </agm-map>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <div>\n      <button (click)=\"showGps()\" mat-mini-fab color=\"primary\">\n        <mat-icon>gps_fixed</mat-icon>\n      </button>\n    </div>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <div>\n      <button (click)=\"openDialog()\" mat-mini-fab color=\"warn\">\n        <mat-icon>map</mat-icon>\n      </button>\n    </div>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\" [ngStyle]=\"{'background-image':'url(./assets/kyoto.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}\"\n    colspan=\"2\">\n    <h2>京都</h2>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\">\n  </mat-grid-tile>\n</mat-grid-list>"
+module.exports = "<mat-grid-list rowHeight=\"50px\" cols=\"3\">\n  <mat-grid-tile colspan=\"3\" rowspan=\"8\" gutterSize=\"5px\">\n    <agm-map [latitude]=\"lat\" [longitude]=\"lng\" [zoom]=\"zoomValue\" [gestureHandling]=\"gestureHandling\">\n      <div *ngIf=\"isLocation\">\n        <agm-marker [latitude]=\"lat\" [longitude]=\"lng\" [iconUrl]=\"iconUrl\">\n        </agm-marker>\n      </div>\n      <div *ngIf=\"isSpot\">\n        <agm-marker *ngFor=\"let m of markers\" [latitude]=\"m.lat\" [longitude]=\"m.lng\">\n          <agm-info-window>\n            <strong style=\"color: black\">{{m.label}}</strong>\n          </agm-info-window>\n        </agm-marker>\n      </div>\n    </agm-map>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <div>\n      <button (click)=\"showGps()\" mat-mini-fab color=\"primary\">\n        <mat-icon>gps_fixed</mat-icon>\n      </button>\n    </div>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <div>\n      <button (click)=\"openDialog()\" mat-mini-fab color=\"warn\">\n        <mat-icon>map</mat-icon>\n      </button>\n    </div>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\" [ngStyle]=\"{'background-image':'url(./assets/kyoto.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}\"\n    colspan=\"2\">\n    <h2>京都</h2>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\">\n    <button (click)=\"openToDoDialog()\" mat-mini-fab color=\"warn\">\n      <mat-icon>assignment</mat-icon>\n    </button>\n  </mat-grid-tile>\n</mat-grid-list>"
 
 /***/ }),
 
@@ -1238,11 +1680,12 @@ module.exports = "<mat-grid-list rowHeight=\"50px\" cols=\"3\">\n  <mat-grid-til
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Day4Component", function() { return Day4Component; });
-/* harmony import */ var _day4_modal_day4_modal_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./day4-modal/day4-modal.component */ "./src/app/day4/day4-modal/day4-modal.component.ts");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _model_spots__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../model/spots */ "./src/app/model/spots.ts");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var _day4_detail_day4_detail_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./day4-detail/day4-detail.component */ "./src/app/day4/day4-detail/day4-detail.component.ts");
+/* harmony import */ var _day4_modal_day4_modal_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./day4-modal/day4-modal.component */ "./src/app/day4/day4-modal/day4-modal.component.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _model_spots__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../model/spots */ "./src/app/model/spots.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1252,6 +1695,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -1293,24 +1737,153 @@ var Day4Component = /** @class */ (function () {
         this.isLocation = true;
     };
     Day4Component.prototype.openDialog = function () {
-        this.dialog.open(_day4_modal_day4_modal_component__WEBPACK_IMPORTED_MODULE_0__["Day4ModalComponent"]);
+        this.dialog.open(_day4_modal_day4_modal_component__WEBPACK_IMPORTED_MODULE_1__["Day4ModalComponent"]);
     };
     Day4Component.prototype.getSpots = function () {
-        return Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["of"])(_model_spots__WEBPACK_IMPORTED_MODULE_2__["spots"]);
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_5__["of"])(_model_spots__WEBPACK_IMPORTED_MODULE_3__["spots"]);
+    };
+    Day4Component.prototype.openToDoDialog = function () {
+        this.dialog.open(_day4_detail_day4_detail_component__WEBPACK_IMPORTED_MODULE_0__["Day4DetailComponent"]);
     };
     Day4Component.prototype.ngOnInit = function () {
         var _this = this;
         this.getSpots().subscribe(function (spots) { _this.markers = spots; });
     };
     Day4Component = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_4__["Component"])({
             selector: 'app-day4',
             template: __webpack_require__(/*! ./day4.component.html */ "./src/app/day4/day4.component.html"),
             styles: [__webpack_require__(/*! ./day4.component.css */ "./src/app/day4/day4.component.css")]
         }),
-        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_1__["MatDialog"]])
+        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"]])
     ], Day4Component);
     return Day4Component;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/day5/day5-detail/day5-detail.component.css":
+/*!************************************************************!*\
+  !*** ./src/app/day5/day5-detail/day5-detail.component.css ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/day5/day5-detail/day5-detail.component.html":
+/*!*************************************************************!*\
+  !*** ./src/app/day5/day5-detail/day5-detail.component.html ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h2 mat-dialog-title>\n  待辦事項\n</h2>\n\n<mat-dialog-content class=\"post-form\">\n    <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">京都<mat-icon>swap_horiz</mat-icon>機場來回車票</mat-list-item>\n        <mat-list-item role=\"listitem\">嵐山小火車車票</mat-list-item>\n        <mat-list-item role=\"listitem\">可先行機場附近吃飯</mat-list-item>\n      </mat-list>\n</mat-dialog-content>\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close color=\"warn\">取消</button>\n</mat-dialog-actions>"
+
+/***/ }),
+
+/***/ "./src/app/day5/day5-detail/day5-detail.component.ts":
+/*!***********************************************************!*\
+  !*** ./src/app/day5/day5-detail/day5-detail.component.ts ***!
+  \***********************************************************/
+/*! exports provided: Day5DetailComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Day5DetailComponent", function() { return Day5DetailComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var Day5DetailComponent = /** @class */ (function () {
+    function Day5DetailComponent() {
+    }
+    Day5DetailComponent.prototype.ngOnInit = function () {
+    };
+    Day5DetailComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-day5-detail',
+            template: __webpack_require__(/*! ./day5-detail.component.html */ "./src/app/day5/day5-detail/day5-detail.component.html"),
+            styles: [__webpack_require__(/*! ./day5-detail.component.css */ "./src/app/day5/day5-detail/day5-detail.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], Day5DetailComponent);
+    return Day5DetailComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/day5/day5-detail1/day5-detail1.component.css":
+/*!**************************************************************!*\
+  !*** ./src/app/day5/day5-detail1/day5-detail1.component.css ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/day5/day5-detail1/day5-detail1.component.html":
+/*!***************************************************************!*\
+  !*** ./src/app/day5/day5-detail1/day5-detail1.component.html ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h2 mat-dialog-title>\n  待辦事項\n</h2>\n\n<mat-dialog-content class=\"post-form\">\n    <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">京都<mat-icon>swap_horiz</mat-icon>機場來回車票</mat-list-item>\n        <mat-list-item role=\"listitem\">嵐山小火車車票</mat-list-item>\n        <mat-list-item role=\"listitem\">可先行機場附近吃飯</mat-list-item>\n      </mat-list>\n</mat-dialog-content>\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close color=\"warn\">取消</button>\n</mat-dialog-actions>"
+
+/***/ }),
+
+/***/ "./src/app/day5/day5-detail1/day5-detail1.component.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/day5/day5-detail1/day5-detail1.component.ts ***!
+  \*************************************************************/
+/*! exports provided: Day5Detail1Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Day5Detail1Component", function() { return Day5Detail1Component; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var Day5Detail1Component = /** @class */ (function () {
+    function Day5Detail1Component() {
+    }
+    Day5Detail1Component.prototype.ngOnInit = function () {
+    };
+    Day5Detail1Component = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-day5-detail1',
+            template: __webpack_require__(/*! ./day5-detail1.component.html */ "./src/app/day5/day5-detail1/day5-detail1.component.html"),
+            styles: [__webpack_require__(/*! ./day5-detail1.component.css */ "./src/app/day5/day5-detail1/day5-detail1.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], Day5Detail1Component);
+    return Day5Detail1Component;
 }());
 
 
@@ -1398,7 +1971,7 @@ module.exports = "agm-map {\r\n    height: 100%;\r\n    width: 99.5%;\r\n}\r\n.m
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-grid-list rowHeight=\"50px\" cols=\"3\">\n  <mat-grid-tile colspan=\"3\" rowspan=\"8\" gutterSize=\"5px\">\n    <agm-map [latitude]=\"lat\" [longitude]=\"lng\" [zoom]=\"zoomValue\" [gestureHandling]=\"gestureHandling\">\n      <div *ngIf=\"isLocation\">\n        <agm-marker [latitude]=\"lat\" [longitude]=\"lng\" [iconUrl]=\"iconUrl\">\n        </agm-marker>\n      </div>\n      <div *ngIf=\"isSpot\">\n        <agm-marker *ngFor=\"let m of markers\" [latitude]=\"m.lat\" [longitude]=\"m.lng\">\n          <agm-info-window>\n            <strong style=\"color: black\">{{m.label}}</strong>\n          </agm-info-window>\n        </agm-marker>\n      </div>\n    </agm-map>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <div>\n      <button (click)=\"showGps()\" mat-mini-fab color=\"primary\">\n        <mat-icon>gps_fixed</mat-icon>\n      </button>\n    </div>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <div>\n      <button (click)=\"openDialog()\" mat-mini-fab color=\"warn\">\n        <mat-icon>map</mat-icon>\n      </button>\n    </div>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\" [ngStyle]=\"{'background-image':'url(./assets/aquarium.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}\"\n    colspan=\"2\">\n    <h2>京都水族館</h2>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\">\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\" [ngStyle]=\"{'background-image':'url(./assets/kingaku.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}\"\n    colspan=\"2\">\n    <h2>金閣寺</h2>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\">\n  </mat-grid-tile>\n</mat-grid-list>"
+module.exports = "<mat-grid-list rowHeight=\"50px\" cols=\"3\">\n  <mat-grid-tile colspan=\"3\" rowspan=\"8\" gutterSize=\"5px\">\n    <agm-map [latitude]=\"lat\" [longitude]=\"lng\" [zoom]=\"zoomValue\" [gestureHandling]=\"gestureHandling\">\n      <div *ngIf=\"isLocation\">\n        <agm-marker [latitude]=\"lat\" [longitude]=\"lng\" [iconUrl]=\"iconUrl\">\n        </agm-marker>\n      </div>\n      <div *ngIf=\"isSpot\">\n        <agm-marker *ngFor=\"let m of markers\" [latitude]=\"m.lat\" [longitude]=\"m.lng\">\n          <agm-info-window>\n            <strong style=\"color: black\">{{m.label}}</strong>\n          </agm-info-window>\n        </agm-marker>\n      </div>\n    </agm-map>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <div>\n      <button (click)=\"showGps()\" mat-mini-fab color=\"primary\">\n        <mat-icon>gps_fixed</mat-icon>\n      </button>\n    </div>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <div>\n      <button (click)=\"openDialog()\" mat-mini-fab color=\"warn\">\n        <mat-icon>map</mat-icon>\n      </button>\n    </div>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\" (click)=\"changeLatLng(34.987745,135.747870)\" [ngStyle]=\"{'background-image':'url(./assets/aquarium.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}\"\n    colspan=\"2\">\n    <h2>京都水族館</h2>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\">\n    <button (click)=\"openToDoDialog()\" mat-mini-fab color=\"warn\">\n      <mat-icon>assignment</mat-icon>\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\" (click)=\"changeLatLng(35.042499,135.729853)\" [ngStyle]=\"{'background-image':'url(./assets/kingaku.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}\"\n    colspan=\"2\">\n    <h2>金閣寺</h2>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\">\n    <button (click)=\"openToDoDialog1()\" mat-mini-fab color=\"warn\">\n      <mat-icon>assignment</mat-icon>\n    </button>\n  </mat-grid-tile>\n</mat-grid-list>"
 
 /***/ }),
 
@@ -1412,11 +1985,13 @@ module.exports = "<mat-grid-list rowHeight=\"50px\" cols=\"3\">\n  <mat-grid-til
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Day5Component", function() { return Day5Component; });
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
-/* harmony import */ var _day5_modal_day5_modal_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./day5-modal/day5-modal.component */ "./src/app/day5/day5-modal/day5-modal.component.ts");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _model_spots__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../model/spots */ "./src/app/model/spots.ts");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _day5_detail1_day5_detail1_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./day5-detail1/day5-detail1.component */ "./src/app/day5/day5-detail1/day5-detail1.component.ts");
+/* harmony import */ var _day5_detail_day5_detail_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./day5-detail/day5-detail.component */ "./src/app/day5/day5-detail/day5-detail.component.ts");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var _day5_modal_day5_modal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./day5-modal/day5-modal.component */ "./src/app/day5/day5-modal/day5-modal.component.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _model_spots__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../model/spots */ "./src/app/model/spots.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1426,6 +2001,8 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
+
 
 
 
@@ -1467,22 +2044,32 @@ var Day5Component = /** @class */ (function () {
         this.isLocation = true;
     };
     Day5Component.prototype.openDialog = function () {
-        this.dialog.open(_day5_modal_day5_modal_component__WEBPACK_IMPORTED_MODULE_1__["Day5ModalComponent"]);
+        this.dialog.open(_day5_modal_day5_modal_component__WEBPACK_IMPORTED_MODULE_3__["Day5ModalComponent"]);
     };
     Day5Component.prototype.getSpots = function () {
-        return Object(rxjs__WEBPACK_IMPORTED_MODULE_0__["of"])(_model_spots__WEBPACK_IMPORTED_MODULE_3__["spots"]);
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(_model_spots__WEBPACK_IMPORTED_MODULE_5__["spots"]);
+    };
+    Day5Component.prototype.changeLatLng = function (lat, lng) {
+        this.lat = +lat;
+        this.lng = +lng;
+    };
+    Day5Component.prototype.openToDoDialog = function () {
+        this.dialog.open(_day5_detail_day5_detail_component__WEBPACK_IMPORTED_MODULE_1__["Day5DetailComponent"]);
+    };
+    Day5Component.prototype.openToDoDialog1 = function () {
+        this.dialog.open(_day5_detail1_day5_detail1_component__WEBPACK_IMPORTED_MODULE_0__["Day5Detail1Component"]);
     };
     Day5Component.prototype.ngOnInit = function () {
         var _this = this;
         this.getSpots().subscribe(function (spots) { _this.markers = spots; });
     };
     Day5Component = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_4__["Component"])({
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_6__["Component"])({
             selector: 'app-day5',
             template: __webpack_require__(/*! ./day5.component.html */ "./src/app/day5/day5.component.html"),
             styles: [__webpack_require__(/*! ./day5.component.css */ "./src/app/day5/day5.component.css")]
         }),
-        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"]])
+        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_4__["MatDialog"]])
     ], Day5Component);
     return Day5Component;
 }());
