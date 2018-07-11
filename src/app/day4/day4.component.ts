@@ -1,3 +1,4 @@
+import { Day4DetailComponent } from './day4-detail/day4-detail.component';
 import { Day3Component } from './../day3/day3.component';
 import { Day4ModalComponent } from './day4-modal/day4-modal.component';
 import { MatDialog } from '@angular/material';
@@ -53,6 +54,9 @@ export class Day4Component implements OnInit {
   }
   getSpots(): Observable<Spot[]> {
     return of(spots);
+  }
+  openToDoDialog(){
+    this.dialog.open(Day4DetailComponent);
   }
   markers: Spot[];
 

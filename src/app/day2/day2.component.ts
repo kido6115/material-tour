@@ -1,3 +1,4 @@
+import { Day2DetailComponent } from './day2-detail/day2-detail.component';
 import { Day2ModalComponent } from './day2-modal/day2-modal.component';
 import { spots } from './../model/spots';
 import { HttpClient } from '@angular/common/http';
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { MatDialog } from '@angular/material';
 import { of, Observable } from 'rxjs';
+import { Day2Detail1Component } from './day2-detail1/day2-detail1.component';
 
 @Component({
   selector: 'app-day2',
@@ -73,6 +75,16 @@ export class Day2Component implements OnInit {
   }
   openDialog() {
     this.dialog.open(Day2ModalComponent);
+  }
+  changeLatLng(lat,lng){
+    this.lat=+lat;
+    this.lng=+lng;
+  }
+  openToDoDialog(){
+    this.dialog.open(Day2DetailComponent);
+  }
+  openToDoDialog1(){
+    this.dialog.open(Day2Detail1Component);
   }
   markers: Spot[];
   bikeJson: Object = null;

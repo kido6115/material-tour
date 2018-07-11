@@ -30,16 +30,22 @@
       </button>
     </div>
   </mat-grid-tile>
-  <mat-grid-tile rowspan="2" [ngStyle]="{'background-image':'url(./assets/aquarium.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}"
+  <mat-grid-tile rowspan="2" (click)="changeLatLng(34.987745,135.747870)" [ngStyle]="{'background-image':'url(./assets/aquarium.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}"
     colspan="2">
     <h2>京都水族館</h2>
   </mat-grid-tile>
   <mat-grid-tile rowspan="2">
+    <button (click)="openToDoDialog()" mat-mini-fab color="warn">
+      <mat-icon>assignment</mat-icon>
+    </button>
   </mat-grid-tile>
-  <mat-grid-tile rowspan="2" [ngStyle]="{'background-image':'url(./assets/kingaku.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}"
+  <mat-grid-tile rowspan="2" (click)="changeLatLng(35.042499,135.729853)" [ngStyle]="{'background-image':'url(./assets/kingaku.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}"
     colspan="2">
     <h2>金閣寺</h2>
   </mat-grid-tile>
   <mat-grid-tile rowspan="2">
+    <button (click)="openToDoDialog1()" mat-mini-fab color="warn">
+      <mat-icon>assignment</mat-icon>
+    </button>
   </mat-grid-tile>
 </mat-grid-list>

@@ -34,14 +34,22 @@
       </button>
     </div>
   </mat-grid-tile>
-  <mat-grid-tile rowspan="2" [ngStyle]="{'background-image':'url(./assets/little_train.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}" colspan="2">
+  <mat-grid-tile (click)="changeLatLng(35.012598,135.607218)" rowspan="2" [ngStyle]="{'background-image':'url(./assets/little_train.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}"
+    colspan="2">
     <h2>嵐山小火車</h2>
   </mat-grid-tile>
-  <mat-grid-tile rowspan="2" >
+  <mat-grid-tile rowspan="2">
+    <button (click)="openToDoDialog()" mat-mini-fab color="warn">
+      <mat-icon>assignment</mat-icon>
+    </button>
   </mat-grid-tile>
-  <mat-grid-tile rowspan="2" [ngStyle]="{'background-image':'url(./assets/arashi_yama.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}" colspan="2">
+  <mat-grid-tile (click)="changeLatLng(35.015127,135.677728)" rowspan="2" [ngStyle]="{'background-image':'url(./assets/arashi_yama.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}"
+    colspan="2">
     <h2>嵐山</h2>
   </mat-grid-tile>
-  <mat-grid-tile rowspan="2" >
+  <mat-grid-tile rowspan="2">
+    <button (click)="openToDoDialog1()" mat-mini-fab color="warn">
+      <mat-icon>assignment</mat-icon>
+    </button>
   </mat-grid-tile>
 </mat-grid-list>

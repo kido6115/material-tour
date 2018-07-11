@@ -30,19 +30,31 @@
       </button>
     </div>
   </mat-grid-tile>
-  <mat-grid-tile rowspan="2" [ngStyle]="{'background-image':'url(./assets/nara.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}" colspan="2">
+  <mat-grid-tile rowspan="2" (click)="changeLatLng(34.684458,135.835433)" [ngStyle]="{'background-image':'url(./assets/nara.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}"
+    colspan="2">
     <h2>奈良</h2>
   </mat-grid-tile>
-  <mat-grid-tile rowspan="2" >
+  <mat-grid-tile rowspan="2">
+    <button (click)="openToDoDialog()" mat-mini-fab color="warn">
+      <mat-icon>assignment</mat-icon>
+    </button>
   </mat-grid-tile>
-  <mat-grid-tile rowspan="2" [ngStyle]="{'background-image':'url(./assets/uji.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}" colspan="2">
+  <mat-grid-tile rowspan="2" (click)="changeLatLng(34.891111,135.806665)" [ngStyle]="{'background-image':'url(./assets/uji.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}"
+    colspan="2">
     <h2>宇治</h2>
   </mat-grid-tile>
-  <mat-grid-tile rowspan="2" >
+  <mat-grid-tile rowspan="2">
+    <button (click)="openToDoDialog1()" mat-mini-fab color="warn">
+      <mat-icon>assignment</mat-icon>
+    </button>
   </mat-grid-tile>
-  <mat-grid-tile rowspan="2" [ngStyle]="{'background-image':'url(./assets/fushimi.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}" colspan="2">
+  <mat-grid-tile rowspan="2" (click)="changeLatLng(34.967123,135.772629)" [ngStyle]="{'background-image':'url(./assets/fushimi.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}"
+    colspan="2">
     <h2>稻荷神社</h2>
   </mat-grid-tile>
-  <mat-grid-tile rowspan="2" >
+  <mat-grid-tile rowspan="2">
+    <button (click)="openToDoDialog2()" mat-mini-fab color="warn">
+      <mat-icon>assignment</mat-icon>
+    </button>
   </mat-grid-tile>
 </mat-grid-list>

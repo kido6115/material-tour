@@ -1,3 +1,5 @@
+import { Day5Detail1Component } from './day5-detail1/day5-detail1.component';
+import { Day5DetailComponent } from './day5-detail/day5-detail.component';
 import { Observable, of } from 'rxjs';
 import { Day5ModalComponent } from './day5-modal/day5-modal.component';
 import { MatDialog } from '@angular/material';
@@ -51,6 +53,16 @@ export class Day5Component implements OnInit {
   }
   getSpots(): Observable<Spot[]> {
     return of(spots);
+  }
+  changeLatLng(lat,lng){
+    this.lat=+lat;
+    this.lng=+lng;
+  }
+  openToDoDialog(){
+    this.dialog.open(Day5DetailComponent);
+  }
+  openToDoDialog1(){
+    this.dialog.open(Day5Detail1Component);
   }
   markers: Spot[];
 

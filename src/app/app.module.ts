@@ -25,6 +25,14 @@ import { AgmDirectionModule } from 'agm-direction';
 import { DirectionModalComponent } from './direction/direction-modal/direction-modal.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material';
+import { Day2DetailComponent } from './day2/day2-detail/day2-detail.component';
+import { Day2Detail1Component } from './day2/day2-detail1/day2-detail1.component';
+import { Day3DetailComponent } from './day3/day3-detail/day3-detail.component';
+import { Day3Detail1Component } from './day3/day3-detail1/day3-detail1.component';
+import { Day3Detail2Component } from './day3/day3-detail2/day3-detail2.component';
+import { Day4DetailComponent } from './day4/day4-detail/day4-detail.component';
+import { Day5DetailComponent } from './day5/day5-detail/day5-detail.component';
+import { Day5Detail1Component } from './day5/day5-detail1/day5-detail1.component';
 
 @NgModule({
   declarations: [
@@ -44,13 +52,29 @@ import { MatFormFieldModule } from '@angular/material';
     ToDoModalComponent,
     DirectionComponent,
     DirectionModalComponent,
-     ],
-  imports: [
-    BrowserModule,BrowserAnimationsModule, AppRoutingModule,SharedMaterialModule,HttpClientModule,HttpClientJsonpModule,FormsModule,ReactiveFormsModule,MatFormFieldModule,AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyBgkSTUKQ5NYL99GCmZrNPEaXEoNHi2Mq0',
-    language: 'zh-TW'}),AgmDirectionModule
+    Day2DetailComponent,
+    Day2Detail1Component,
+    Day3DetailComponent,
+    Day3Detail1Component,
+    Day3Detail2Component,
+    Day4DetailComponent,
+    Day5DetailComponent,
+    Day5Detail1Component,
   ],
-  entryComponents:[Day2ModalComponent,Day3ModalComponent,Day4ModalComponent,Day5ModalComponent,AirPortLineModalComponent,ToDoModalComponent,DirectionModalComponent],
+  imports: [
+    BrowserModule, BrowserAnimationsModule, AppRoutingModule, SharedMaterialModule, HttpClientModule, HttpClientJsonpModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBgkSTUKQ5NYL99GCmZrNPEaXEoNHi2Mq0',
+      language: 'zh-TW'
+    }), AgmDirectionModule
+  ],
+  entryComponents: [Day2ModalComponent, Day3ModalComponent, Day4ModalComponent, Day5ModalComponent, AirPortLineModalComponent, ToDoModalComponent, DirectionModalComponent, Day2DetailComponent,
+    Day2Detail1Component,
+    Day3DetailComponent,
+    Day3Detail1Component,
+    Day3Detail2Component,
+    Day4DetailComponent,
+    Day5DetailComponent,
+    Day5Detail1Component,],
   providers: [GoogleMapsAPIWrapper],
   bootstrap: [AppComponent]
 })
