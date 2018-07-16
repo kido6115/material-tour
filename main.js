@@ -86,6 +86,69 @@ var AirPortLineModalComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/air-port-line/air-port-line-modal2/air-port-line-modal2.component.css":
+/*!***************************************************************************************!*\
+  !*** ./src/app/air-port-line/air-port-line-modal2/air-port-line-modal2.component.css ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n  .mat-dialog-title{\r\n    min-width: 300px;\r\n  }\r\n  .mat-progress-bar{\r\n    width: 100px;\r\n    -webkit-transform: rotate(270deg);\r\n            transform: rotate(270deg);\r\n}\r\n  h4{\r\n    text-align: center;\r\n}\r\n"
+
+/***/ }),
+
+/***/ "./src/app/air-port-line/air-port-line-modal2/air-port-line-modal2.component.html":
+/*!****************************************************************************************!*\
+  !*** ./src/app/air-port-line/air-port-line-modal2/air-port-line-modal2.component.html ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<h1 mat-dialog-title>\n  </h1>\n  <mat-dialog-content class=\"post-form\">\n    <mat-grid-list cols=\"5\" rowHeight=\"50px\">\n      <!-- 1 -->\n      <mat-grid-tile colspan=\"5\" gutterSize=\"5px\">\n        <h4 class=\"icon-part\">\n          <div>機場</div>\n          <mat-icon color=\"accent\">flight</mat-icon>\n        </h4>\n      </mat-grid-tile>\n      <mat-grid-tile colspan=\"2\" gutterSize=\"5px\">\n        <h5 class=\"\">\n          <div>haruka(JR)</div>\n          <div>(1:16)</div>\n          <div>¥3500</div>\n        </h5>\n      </mat-grid-tile>\n      <mat-grid-tile gutterSize=\"5px\">\n        <mat-progress-bar mode=\"buffer\" value=\"0\" bufferValue=\"0\"></mat-progress-bar>\n      </mat-grid-tile>\n      <mat-grid-tile colspan=\"2\" gutterSize=\"5px\">\n      </mat-grid-tile>\n      <!-- 2 -->\n      <mat-grid-tile colspan=\"5\" gutterSize=\"5px\">\n        <h4 class=\"icon-part\">\n          <div>京都駅</div>\n          <mat-icon color=\"accent\">directions_subway</mat-icon>\n        </h4>\n      </mat-grid-tile>\n    </mat-grid-list>\n  </mat-dialog-content>\n  <mat-dialog-actions>\n    <button mat-button mat-dialog-close color=\"warn\">關閉</button>\n  </mat-dialog-actions>"
+
+/***/ }),
+
+/***/ "./src/app/air-port-line/air-port-line-modal2/air-port-line-modal2.component.ts":
+/*!**************************************************************************************!*\
+  !*** ./src/app/air-port-line/air-port-line-modal2/air-port-line-modal2.component.ts ***!
+  \**************************************************************************************/
+/*! exports provided: AirPortLineModal2Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AirPortLineModal2Component", function() { return AirPortLineModal2Component; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var AirPortLineModal2Component = /** @class */ (function () {
+    function AirPortLineModal2Component() {
+    }
+    AirPortLineModal2Component.prototype.ngOnInit = function () {
+    };
+    AirPortLineModal2Component = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-air-port-line-modal2',
+            template: __webpack_require__(/*! ./air-port-line-modal2.component.html */ "./src/app/air-port-line/air-port-line-modal2/air-port-line-modal2.component.html"),
+            styles: [__webpack_require__(/*! ./air-port-line-modal2.component.css */ "./src/app/air-port-line/air-port-line-modal2/air-port-line-modal2.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], AirPortLineModal2Component);
+    return AirPortLineModal2Component;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/air-port-line/air-port-line.component.css":
 /*!***********************************************************!*\
   !*** ./src/app/air-port-line/air-port-line.component.css ***!
@@ -104,7 +167,7 @@ module.exports = "agm-map {\r\n    height: 100%;\r\n    width: 99.5%;\r\n}\r\n.c
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-grid-list rowHeight=\"50px\" cols=\"3\">\n  <mat-grid-tile colspan=\"3\" rowspan=\"8\" gutterSize=\"5px\">\n    <agm-map [latitude]=\"lat\" [longitude]=\"lng\" [zoom]=\"zoomValue\" [gestureHandling]=\"gestureHandling\">\n      <div *ngIf=\"isLocation\">\n        <agm-marker [latitude]=\"lat\" [longitude]=\"lng\" [iconUrl]=\"iconUrl\">\n        </agm-marker>\n      </div>\n      <agm-marker *ngFor=\"let m of markers\" [latitude]=\"m.lat\" [longitude]=\"m.lng\">\n        <agm-info-window>\n          <strong style=\"color: black\">{{m.label}}</strong>\n        </agm-info-window>\n      </agm-marker>\n    </agm-map>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <button (click)=\"showGps()\" mat-mini-fab color=\"primary\">\n      <mat-icon>gps_fixed</mat-icon>\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n      <h5><mat-icon>flight_land</mat-icon></h5>\n      <h5><div>07/27 16:30</div></h5>\n      <h5><mat-icon>flight_takeoff</mat-icon></h5>\n      <h5><div>07/31 22:25</div></h5>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <button (click)=\"openDialog()\" mat-mini-fab color=\"warn\">\n      <mat-icon>map</mat-icon>\n    </button>\n  </mat-grid-tile>\n\n  <mat-grid-tile colspan=\"2\" gutterSize=\"5px\">\n  <h3>關西國際空港</h3>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <button (click)=\"openToDoDialog()\" mat-mini-fab color=\"warn\">\n      <mat-icon>assignment</mat-icon>\n    </button>\n  </mat-grid-tile>\n\n</mat-grid-list>"
+module.exports = "<mat-grid-list rowHeight=\"50px\" cols=\"3\">\n  <mat-grid-tile colspan=\"3\" rowspan=\"8\" gutterSize=\"5px\">\n    <agm-map [latitude]=\"lat\" [longitude]=\"lng\" [zoom]=\"zoomValue\" [gestureHandling]=\"gestureHandling\">\n      <div *ngIf=\"isLocation\">\n        <agm-marker [latitude]=\"lat\" [longitude]=\"lng\" [iconUrl]=\"iconUrl\">\n        </agm-marker>\n      </div>\n      <agm-marker *ngFor=\"let m of markers\" [latitude]=\"m.lat\" [longitude]=\"m.lng\">\n        <agm-info-window>\n          <strong style=\"color: black\">{{m.label}}</strong>\n        </agm-info-window>\n      </agm-marker>\n    </agm-map>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <button (click)=\"showGps()\" mat-mini-fab color=\"primary\">\n      <mat-icon>gps_fixed</mat-icon>\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <h5>\n      <mat-icon>flight_land</mat-icon>\n    </h5>\n    <h5>\n      <div>07/27 16:30</div>\n    </h5>\n    <button (click)=\"openDialog()\" mat-mini-fab color=\"warn\">\n        <mat-icon>map</mat-icon>\n      </button>\n\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <h5>\n      <mat-icon>flight_takeoff</mat-icon>\n    </h5>\n    <h5>\n      <div>07/31 22:25</div>\n    </h5>\n    <button (click)=\"openDialog2()\" mat-mini-fab color=\"warn\">\n      <mat-icon>map</mat-icon>\n    </button>\n  </mat-grid-tile>\n\n  <mat-grid-tile colspan=\"2\" gutterSize=\"5px\">\n    <h3>關西國際空港</h3>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <button (click)=\"openToDoDialog()\" mat-mini-fab color=\"warn\">\n      <mat-icon>assignment</mat-icon>\n    </button>\n  </mat-grid-tile>\n\n</mat-grid-list>"
 
 /***/ }),
 
@@ -118,10 +181,11 @@ module.exports = "<mat-grid-list rowHeight=\"50px\" cols=\"3\">\n  <mat-grid-til
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AirPortLineComponent", function() { return AirPortLineComponent; });
-/* harmony import */ var _air_port_line_modal_air_port_line_modal_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./air-port-line-modal/air-port-line-modal.component */ "./src/app/air-port-line/air-port-line-modal/air-port-line-modal.component.ts");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _to_do_modal_to_do_modal_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./to-do-modal/to-do-modal.component */ "./src/app/air-port-line/to-do-modal/to-do-modal.component.ts");
+/* harmony import */ var _air_port_line_modal2_air_port_line_modal2_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./air-port-line-modal2/air-port-line-modal2.component */ "./src/app/air-port-line/air-port-line-modal2/air-port-line-modal2.component.ts");
+/* harmony import */ var _air_port_line_modal_air_port_line_modal_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./air-port-line-modal/air-port-line-modal.component */ "./src/app/air-port-line/air-port-line-modal/air-port-line-modal.component.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _to_do_modal_to_do_modal_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./to-do-modal/to-do-modal.component */ "./src/app/air-port-line/to-do-modal/to-do-modal.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -131,6 +195,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -183,20 +248,23 @@ var AirPortLineComponent = /** @class */ (function () {
         this.isLocation = true;
     };
     AirPortLineComponent.prototype.openDialog = function () {
-        this.dialog.open(_air_port_line_modal_air_port_line_modal_component__WEBPACK_IMPORTED_MODULE_0__["AirPortLineModalComponent"]);
+        this.dialog.open(_air_port_line_modal_air_port_line_modal_component__WEBPACK_IMPORTED_MODULE_1__["AirPortLineModalComponent"]);
+    };
+    AirPortLineComponent.prototype.openDialog2 = function () {
+        this.dialog.open(_air_port_line_modal2_air_port_line_modal2_component__WEBPACK_IMPORTED_MODULE_0__["AirPortLineModal2Component"]);
     };
     AirPortLineComponent.prototype.openToDoDialog = function () {
-        this.dialog.open(_to_do_modal_to_do_modal_component__WEBPACK_IMPORTED_MODULE_3__["ToDoModalComponent"]);
+        this.dialog.open(_to_do_modal_to_do_modal_component__WEBPACK_IMPORTED_MODULE_4__["ToDoModalComponent"]);
     };
     AirPortLineComponent.prototype.ngOnInit = function () {
     };
     AirPortLineComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
             selector: 'app-air-port-line',
             template: __webpack_require__(/*! ./air-port-line.component.html */ "./src/app/air-port-line/air-port-line.component.html"),
             styles: [__webpack_require__(/*! ./air-port-line.component.css */ "./src/app/air-port-line/air-port-line.component.css")]
         }),
-        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_1__["MatDialog"]])
+        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"]])
     ], AirPortLineComponent);
     return AirPortLineComponent;
 }());
@@ -223,7 +291,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2 mat-dialog-title>\n  待辦事項\n</h2>\n\n<mat-dialog-content class=\"post-form\">\n    <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">京都<mat-icon>swap_horiz</mat-icon>機場來回車票</mat-list-item>\n        <mat-list-item role=\"listitem\">嵐山小火車車票</mat-list-item>\n        <mat-list-item role=\"listitem\">可先行機場附近吃飯</mat-list-item>\n      </mat-list>\n</mat-dialog-content>\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close color=\"warn\">取消</button>\n</mat-dialog-actions>"
+module.exports = "<h2 mat-dialog-title>\n  待辦事項\n</h2>\n\n<mat-dialog-content class=\"post-form\">\n    <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">京都<mat-icon>swap_horiz</mat-icon>機場來回車票</mat-list-item>\n        <mat-list-item role=\"listitem\">嵐山小火車車票(大人¥620/小孩¥310)</mat-list-item>\n        <mat-list-item role=\"listitem\">可先行機場附近吃飯</mat-list-item>\n      </mat-list>\n</mat-dialog-content>\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close color=\"warn\">取消</button>\n</mat-dialog-actions>"
 
 /***/ }),
 
@@ -631,12 +699,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _day4_day4_detail_day4_detail_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./day4/day4-detail/day4-detail.component */ "./src/app/day4/day4-detail/day4-detail.component.ts");
 /* harmony import */ var _day5_day5_detail_day5_detail_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./day5/day5-detail/day5-detail.component */ "./src/app/day5/day5-detail/day5-detail.component.ts");
 /* harmony import */ var _day5_day5_detail1_day5_detail1_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./day5/day5-detail1/day5-detail1.component */ "./src/app/day5/day5-detail1/day5-detail1.component.ts");
+/* harmony import */ var _air_port_line_air_port_line_modal2_air_port_line_modal2_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./air-port-line/air-port-line-modal2/air-port-line-modal2.component */ "./src/app/air-port-line/air-port-line-modal2/air-port-line-modal2.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -701,6 +771,7 @@ var AppModule = /** @class */ (function () {
                 _day4_day4_detail_day4_detail_component__WEBPACK_IMPORTED_MODULE_31__["Day4DetailComponent"],
                 _day5_day5_detail_day5_detail_component__WEBPACK_IMPORTED_MODULE_32__["Day5DetailComponent"],
                 _day5_day5_detail1_day5_detail1_component__WEBPACK_IMPORTED_MODULE_33__["Day5Detail1Component"],
+                _air_port_line_air_port_line_modal2_air_port_line_modal2_component__WEBPACK_IMPORTED_MODULE_34__["AirPortLineModal2Component"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__["BrowserAnimationsModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"], _shared_material_shared_material_module__WEBPACK_IMPORTED_MODULE_7__["SharedMaterialModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_12__["HttpClientModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_12__["HttpClientJsonpModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_24__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_24__["ReactiveFormsModule"], _angular_material__WEBPACK_IMPORTED_MODULE_25__["MatFormFieldModule"], _agm_core__WEBPACK_IMPORTED_MODULE_3__["AgmCoreModule"].forRoot({
@@ -715,7 +786,7 @@ var AppModule = /** @class */ (function () {
                 _day3_day3_detail2_day3_detail2_component__WEBPACK_IMPORTED_MODULE_30__["Day3Detail2Component"],
                 _day4_day4_detail_day4_detail_component__WEBPACK_IMPORTED_MODULE_31__["Day4DetailComponent"],
                 _day5_day5_detail_day5_detail_component__WEBPACK_IMPORTED_MODULE_32__["Day5DetailComponent"],
-                _day5_day5_detail1_day5_detail1_component__WEBPACK_IMPORTED_MODULE_33__["Day5Detail1Component"],],
+                _day5_day5_detail1_day5_detail1_component__WEBPACK_IMPORTED_MODULE_33__["Day5Detail1Component"], _air_port_line_air_port_line_modal2_air_port_line_modal2_component__WEBPACK_IMPORTED_MODULE_34__["AirPortLineModal2Component"]],
             providers: [_agm_core__WEBPACK_IMPORTED_MODULE_3__["GoogleMapsAPIWrapper"]],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
         })
@@ -815,7 +886,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2 mat-dialog-title>\n  待辦事項\n</h2>\n\n<mat-dialog-content class=\"post-form\">\n    <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">京都<mat-icon>swap_horiz</mat-icon>機場來回車票</mat-list-item>\n        <mat-list-item role=\"listitem\">嵐山小火車車票</mat-list-item>\n        <mat-list-item role=\"listitem\">可先行機場附近吃飯</mat-list-item>\n      </mat-list>\n</mat-dialog-content>\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close color=\"warn\">取消</button>\n</mat-dialog-actions>"
+module.exports = "<h2 mat-dialog-title>\n  待辦事項\n</h2>\n\n<mat-dialog-content class=\"post-form\">\n    <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">馬堀搭至嵐山</mat-list-item>\n        <mat-list-item role=\"listitem\">步行至嵐電嵐山</mat-list-item>\n      </mat-list>\n</mat-dialog-content>\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close color=\"warn\">取消</button>\n</mat-dialog-actions>"
 
 /***/ }),
 
@@ -878,7 +949,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2 mat-dialog-title>\n  待辦事項\n</h2>\n\n<mat-dialog-content class=\"post-form\">\n    <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">京都<mat-icon>swap_horiz</mat-icon>機場來回車票</mat-list-item>\n        <mat-list-item role=\"listitem\">嵐山小火車車票</mat-list-item>\n        <mat-list-item role=\"listitem\">可先行機場附近吃飯</mat-list-item>\n      </mat-list>\n</mat-dialog-content>\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close color=\"warn\">取消</button>\n</mat-dialog-actions>"
+module.exports = "<h2 mat-dialog-title>\n  待辦事項\n</h2>\n\n<mat-dialog-content class=\"post-form\">\n    <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">附近吃飯，之後可沿腳踏車路線騎車或車站附近逛街</mat-list-item>\n        <mat-list-item role=\"listitem\">租借費用約¥1000~1500，情況允許建議電動，營業時間通常到5點</mat-list-item>\n\n      </mat-list>\n</mat-dialog-content>\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close color=\"warn\">取消</button>\n</mat-dialog-actions>"
 
 /***/ }),
 
@@ -1158,7 +1229,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2 mat-dialog-title>\n  待辦事項\n</h2>\n\n<mat-dialog-content class=\"post-form\">\n    <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">京都<mat-icon>swap_horiz</mat-icon>機場來回車票</mat-list-item>\n        <mat-list-item role=\"listitem\">嵐山小火車車票</mat-list-item>\n        <mat-list-item role=\"listitem\">可先行機場附近吃飯</mat-list-item>\n      </mat-list>\n</mat-dialog-content>\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close color=\"warn\">取消</button>\n</mat-dialog-actions>"
+module.exports = "<h2 mat-dialog-title>\n    待辦事項\n  </h2>\n  \n  <mat-dialog-content class=\"post-form\">\n      <mat-list role=\"list\">\n          <mat-list-item role=\"listitem\">早上至奈良公園、東大社、春日神社</mat-list-item>\n          <mat-list-item role=\"listitem\">中午前往宇治</mat-list-item>\n        </mat-list>\n  </mat-dialog-content>\n  <mat-dialog-actions>\n    <button mat-button mat-dialog-close color=\"warn\">取消</button>\n  </mat-dialog-actions>"
 
 /***/ }),
 
@@ -1221,7 +1292,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2 mat-dialog-title>\n  待辦事項\n</h2>\n\n<mat-dialog-content class=\"post-form\">\n    <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">京都<mat-icon>swap_horiz</mat-icon>機場來回車票</mat-list-item>\n        <mat-list-item role=\"listitem\">嵐山小火車車票</mat-list-item>\n        <mat-list-item role=\"listitem\">可先行機場附近吃飯</mat-list-item>\n      </mat-list>\n</mat-dialog-content>\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close color=\"warn\">取消</button>\n</mat-dialog-actions>"
+module.exports = "<h2 mat-dialog-title>\n    待辦事項\n  </h2>\n  \n  <mat-dialog-content class=\"post-form\">\n      <mat-list role=\"list\">\n          <mat-list-item role=\"listitem\">沿著表參道至橘島在至宇治神社觀光最後至奈良線宇治駅搭車</mat-list-item>\n          <mat-list-item role=\"listitem\">表參道起點有中村藤吉本店，可於一開始排隊看排隊時間進行散步</mat-list-item>\n        </mat-list>\n  </mat-dialog-content>\n  <mat-dialog-actions>\n    <button mat-button mat-dialog-close color=\"warn\">取消</button>\n  </mat-dialog-actions> "
 
 /***/ }),
 
@@ -1284,7 +1355,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  day3-detail2 works!\n</p>\n"
+module.exports = "<h2 mat-dialog-title>\n    待辦事項\n  </h2>\n  \n  <mat-dialog-content class=\"post-form\">\n      <mat-list role=\"list\">\n          <mat-list-item role=\"listitem\">時間允許可順路再去稻和神社，補足上次沒有觀賞完</mat-list-item>\n        </mat-list>\n  </mat-dialog-content>\n  <mat-dialog-actions>\n    <button mat-button mat-dialog-close color=\"warn\">取消</button>\n  </mat-dialog-actions> "
 
 /***/ }),
 
@@ -1540,7 +1611,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2 mat-dialog-title>\n  待辦事項\n</h2>\n\n<mat-dialog-content class=\"post-form\">\n    <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">京都<mat-icon>swap_horiz</mat-icon>機場來回車票</mat-list-item>\n        <mat-list-item role=\"listitem\">嵐山小火車車票</mat-list-item>\n        <mat-list-item role=\"listitem\">可先行機場附近吃飯</mat-list-item>\n      </mat-list>\n</mat-dialog-content>\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close color=\"warn\">取消</button>\n</mat-dialog-actions>"
+module.exports = "<h2 mat-dialog-title>\n  待辦事項\n</h2>\n\n<mat-dialog-content class=\"post-form\">\n    <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">從祇園沿著花見小路可一路逛至清水五條</mat-list-item>\n      </mat-list>\n</mat-dialog-content>\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close color=\"warn\">取消</button>\n</mat-dialog-actions>"
 
 /***/ }),
 
@@ -1666,7 +1737,7 @@ module.exports = "agm-map {\r\n    height: 100%;\r\n    width: 99.5%;\r\n}\r\n.m
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-grid-list rowHeight=\"50px\" cols=\"3\">\n  <mat-grid-tile colspan=\"3\" rowspan=\"8\" gutterSize=\"5px\">\n    <agm-map [latitude]=\"lat\" [longitude]=\"lng\" [zoom]=\"zoomValue\" [gestureHandling]=\"gestureHandling\">\n      <div *ngIf=\"isLocation\">\n        <agm-marker [latitude]=\"lat\" [longitude]=\"lng\" [iconUrl]=\"iconUrl\">\n        </agm-marker>\n      </div>\n      <div *ngIf=\"isSpot\">\n        <agm-marker *ngFor=\"let m of markers\" [latitude]=\"m.lat\" [longitude]=\"m.lng\">\n          <agm-info-window>\n            <strong style=\"color: black\">{{m.label}}</strong>\n          </agm-info-window>\n        </agm-marker>\n      </div>\n    </agm-map>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <div>\n      <button (click)=\"showGps()\" mat-mini-fab color=\"primary\">\n        <mat-icon>gps_fixed</mat-icon>\n      </button>\n    </div>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <div>\n      <button (click)=\"openDialog()\" mat-mini-fab color=\"warn\">\n        <mat-icon>map</mat-icon>\n      </button>\n    </div>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\" [ngStyle]=\"{'background-image':'url(./assets/kyoto.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}\"\n    colspan=\"2\">\n    <h2>京都</h2>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\">\n    <button (click)=\"openToDoDialog()\" mat-mini-fab color=\"warn\">\n      <mat-icon>assignment</mat-icon>\n    </button>\n  </mat-grid-tile>\n</mat-grid-list>"
+module.exports = "<mat-grid-list rowHeight=\"50px\" cols=\"3\">\n  <mat-grid-tile colspan=\"3\" rowspan=\"8\" gutterSize=\"5px\">\n    <agm-map [latitude]=\"lat\" [longitude]=\"lng\" [zoom]=\"zoomValue\" [gestureHandling]=\"gestureHandling\">\n      <div *ngIf=\"isLocation\">\n        <agm-marker [latitude]=\"lat\" [longitude]=\"lng\" [iconUrl]=\"iconUrl\">\n        </agm-marker>\n      </div>\n      <div *ngIf=\"isSpot\">\n        <agm-marker *ngFor=\"let m of markers\" [latitude]=\"m.lat\" [longitude]=\"m.lng\" >\n          <agm-info-window>\n            <strong style=\"color: black\">{{m.label}}</strong>\n          </agm-info-window>\n        </agm-marker>\n      </div>\n      <div *ngIf=\"isFood\">\n        <agm-marker *ngFor=\"let m of foods\" [latitude]=\"m.lat\" [longitude]=\"m.lng\" [iconUrl]=\"m.icon\">\n          <agm-info-window>\n            <strong  style=\"color: black;\">{{m.label}}</strong>\n          </agm-info-window>\n        </agm-marker>\n      </div>\n    </agm-map>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <div>\n      <button (click)=\"showGps()\" mat-mini-fab color=\"primary\">\n        <mat-icon>gps_fixed</mat-icon>\n      </button>\n    </div>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n      <mat-slide-toggle color=\"primary\" (change)=\"showFood($event)\">餐廳</mat-slide-toggle>\n  </mat-grid-tile>\n  <mat-grid-tile gutterSize=\"5px\">\n    <div>\n      <button (click)=\"openDialog()\" mat-mini-fab color=\"warn\">\n        <mat-icon>map</mat-icon>\n      </button>\n    </div>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\" [ngStyle]=\"{'background-image':'url(./assets/kyoto.jpg)','background-repeat': 'no-repeat','background-size': '100% 100%'}\"\n    colspan=\"2\">\n    <h2>京都</h2>\n  </mat-grid-tile>\n  <mat-grid-tile rowspan=\"2\">\n    <button (click)=\"openToDoDialog()\" mat-mini-fab color=\"warn\">\n      <mat-icon>assignment</mat-icon>\n    </button>\n  </mat-grid-tile>\n</mat-grid-list>"
 
 /***/ }),
 
@@ -1680,12 +1751,13 @@ module.exports = "<mat-grid-list rowHeight=\"50px\" cols=\"3\">\n  <mat-grid-til
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Day4Component", function() { return Day4Component; });
-/* harmony import */ var _day4_detail_day4_detail_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./day4-detail/day4-detail.component */ "./src/app/day4/day4-detail/day4-detail.component.ts");
-/* harmony import */ var _day4_modal_day4_modal_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./day4-modal/day4-modal.component */ "./src/app/day4/day4-modal/day4-modal.component.ts");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _model_spots__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../model/spots */ "./src/app/model/spots.ts");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var _model_sweets__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../model/sweets */ "./src/app/model/sweets.ts");
+/* harmony import */ var _day4_detail_day4_detail_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./day4-detail/day4-detail.component */ "./src/app/day4/day4-detail/day4-detail.component.ts");
+/* harmony import */ var _day4_modal_day4_modal_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./day4-modal/day4-modal.component */ "./src/app/day4/day4-modal/day4-modal.component.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _model_spots__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../model/spots */ "./src/app/model/spots.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1695,6 +1767,8 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
+/// <reference types="googlemaps" />
 
 
 
@@ -1711,6 +1785,7 @@ var Day4Component = /** @class */ (function () {
         this.geojson = './assets/bike.json';
         this.isLocation = false;
         this.isSpot = true;
+        this.isFood = false;
         this.gestureHandling = 'greedy';
     }
     Day4Component.prototype.showGps = function () {
@@ -1736,26 +1811,38 @@ var Day4Component = /** @class */ (function () {
         }
         this.isLocation = true;
     };
+    Day4Component.prototype.showFood = function (event) {
+        if (event.checked) {
+            this.isFood = true;
+        }
+        else {
+            this.isFood = false;
+        }
+    };
     Day4Component.prototype.openDialog = function () {
-        this.dialog.open(_day4_modal_day4_modal_component__WEBPACK_IMPORTED_MODULE_1__["Day4ModalComponent"]);
+        this.dialog.open(_day4_modal_day4_modal_component__WEBPACK_IMPORTED_MODULE_2__["Day4ModalComponent"]);
     };
     Day4Component.prototype.getSpots = function () {
-        return Object(rxjs__WEBPACK_IMPORTED_MODULE_5__["of"])(_model_spots__WEBPACK_IMPORTED_MODULE_3__["spots"]);
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_6__["of"])(_model_spots__WEBPACK_IMPORTED_MODULE_4__["spots"]);
+    };
+    Day4Component.prototype.getFoods = function () {
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_6__["of"])(_model_sweets__WEBPACK_IMPORTED_MODULE_0__["sweets"]);
     };
     Day4Component.prototype.openToDoDialog = function () {
-        this.dialog.open(_day4_detail_day4_detail_component__WEBPACK_IMPORTED_MODULE_0__["Day4DetailComponent"]);
+        this.dialog.open(_day4_detail_day4_detail_component__WEBPACK_IMPORTED_MODULE_1__["Day4DetailComponent"]);
     };
     Day4Component.prototype.ngOnInit = function () {
         var _this = this;
         this.getSpots().subscribe(function (spots) { _this.markers = spots; });
+        this.getFoods().subscribe(function (sweets) { _this.foods = sweets; });
     };
     Day4Component = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_4__["Component"])({
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_5__["Component"])({
             selector: 'app-day4',
             template: __webpack_require__(/*! ./day4.component.html */ "./src/app/day4/day4.component.html"),
             styles: [__webpack_require__(/*! ./day4.component.css */ "./src/app/day4/day4.component.css")]
         }),
-        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"]])
+        __metadata("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_3__["MatDialog"]])
     ], Day4Component);
     return Day4Component;
 }());
@@ -1782,7 +1869,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2 mat-dialog-title>\n  待辦事項\n</h2>\n\n<mat-dialog-content class=\"post-form\">\n    <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">京都<mat-icon>swap_horiz</mat-icon>機場來回車票</mat-list-item>\n        <mat-list-item role=\"listitem\">嵐山小火車車票</mat-list-item>\n        <mat-list-item role=\"listitem\">可先行機場附近吃飯</mat-list-item>\n      </mat-list>\n</mat-dialog-content>\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close color=\"warn\">取消</button>\n</mat-dialog-actions>"
+module.exports = "<h2 mat-dialog-title>\n  待辦事項\n</h2>\n\n<mat-dialog-content class=\"post-form\">\n    <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">將行李寄放</mat-list-item>\n        <mat-list-item role=\"listitem\">先至車站購買巴士一日券</mat-list-item>\n        <mat-list-item role=\"listitem\">早上可先在水族館觀光吃飯，門票大人¥2050 /小孩¥600</mat-list-item>\n        <mat-list-item role=\"listitem\">下午前往金閣寺</mat-list-item>\n      </mat-list>\n</mat-dialog-content>\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close color=\"warn\">取消</button>\n</mat-dialog-actions>"
 
 /***/ }),
 
@@ -1845,7 +1932,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2 mat-dialog-title>\n  待辦事項\n</h2>\n\n<mat-dialog-content class=\"post-form\">\n    <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">京都<mat-icon>swap_horiz</mat-icon>機場來回車票</mat-list-item>\n        <mat-list-item role=\"listitem\">嵐山小火車車票</mat-list-item>\n        <mat-list-item role=\"listitem\">可先行機場附近吃飯</mat-list-item>\n      </mat-list>\n</mat-dialog-content>\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close color=\"warn\">取消</button>\n</mat-dialog-actions>"
+module.exports = "<h2 mat-dialog-title>\n  待辦事項\n</h2>\n\n<mat-dialog-content class=\"post-form\">\n    <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">門票大人¥400 / 小孩¥300</mat-list-item>\n        <mat-list-item role=\"listitem\">傍晚返回京都車站吃飯完搭車至機場</mat-list-item>\n      </mat-list>\n</mat-dialog-content>\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close color=\"warn\">取消</button>\n</mat-dialog-actions>"
 
 /***/ }),
 
@@ -2393,6 +2480,47 @@ var spots = [
         lng: 135.811750,
         lat: 34.892142,
         label: '宇治上神社',
+        draggable: false
+    }
+];
+
+
+/***/ }),
+
+/***/ "./src/app/model/sweets.ts":
+/*!*********************************!*\
+  !*** ./src/app/model/sweets.ts ***!
+  \*********************************/
+/*! exports provided: sweets */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sweets", function() { return sweets; });
+var sweets = [
+    {
+        lng: 135.757405,
+        lat: 34.985670,
+        label: '中村藤吉-伊勢丹3F\n茶寮都里-伊勢丹6F\n麺家いろは-京都駅10F\n德島ラーメン東大拉麵-京都駅10F',
+        icon: './assets/food.png',
+        draggable: false
+    }, {
+        lng: 135.749522,
+        lat: 34.987706,
+        label: '梅小路カフェ BOSSCHE',
+        icon: './assets/food.png',
+        draggable: false
+    }, {
+        lng: 135.760517,
+        lat: 34.988077,
+        label: 'Cafe&dining fleur京都店',
+        icon: './assets/food.png',
+        draggable: false
+    }, {
+        lng: 135.762588,
+        lat: 34.986692,
+        label: '本家 第一旭 たかばし本店',
+        icon: './assets/food.png',
         draggable: false
     }
 ];
