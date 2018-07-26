@@ -6,9 +6,16 @@
         </agm-marker>
       </div>
       <div *ngIf="isSpot">
-        <agm-marker *ngFor="let m of markers" [latitude]="m.lat" [longitude]="m.lng">
+        <agm-marker *ngFor="let m of markers" [latitude]="m.lat" [longitude]="m.lng" >
           <agm-info-window>
             <strong style="color: black">{{m.label}}</strong>
+          </agm-info-window>
+        </agm-marker>
+      </div>
+      <div *ngIf="isFood">
+        <agm-marker *ngFor="let m of foods" [latitude]="m.lat" [longitude]="m.lng" [iconUrl]="m.icon">
+          <agm-info-window>
+            <strong  style="color: black;">{{m.label}}</strong>
           </agm-info-window>
         </agm-marker>
       </div>
@@ -22,6 +29,7 @@
     </div>
   </mat-grid-tile>
   <mat-grid-tile gutterSize="5px">
+      <mat-slide-toggle color="primary" (change)="showFood($event)">餐廳</mat-slide-toggle>
   </mat-grid-tile>
   <mat-grid-tile gutterSize="5px">
     <div>

@@ -33,6 +33,7 @@ import { Day3Detail2Component } from './day3/day3-detail2/day3-detail2.component
 import { Day4DetailComponent } from './day4/day4-detail/day4-detail.component';
 import { Day5DetailComponent } from './day5/day5-detail/day5-detail.component';
 import { Day5Detail1Component } from './day5/day5-detail1/day5-detail1.component';
+import { AirPortLineModal2Component } from './air-port-line/air-port-line-modal2/air-port-line-modal2.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { Day5Detail1Component } from './day5/day5-detail1/day5-detail1.component
     Day4DetailComponent,
     Day5DetailComponent,
     Day5Detail1Component,
+    AirPortLineModal2Component,
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule, AppRoutingModule, SharedMaterialModule, HttpClientModule, HttpClientJsonpModule, FormsModule, ReactiveFormsModule, MatFormFieldModule, AgmCoreModule.forRoot({
@@ -74,7 +76,7 @@ import { Day5Detail1Component } from './day5/day5-detail1/day5-detail1.component
     Day3Detail2Component,
     Day4DetailComponent,
     Day5DetailComponent,
-    Day5Detail1Component,],
+    Day5Detail1Component,AirPortLineModal2Component],
   providers: [GoogleMapsAPIWrapper],
   bootstrap: [AppComponent]
 })

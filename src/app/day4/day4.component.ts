@@ -1,11 +1,11 @@
+import { sweets } from './../model/sweets';
+/// <reference types="googlemaps" />
 import { Day4DetailComponent } from './day4-detail/day4-detail.component';
-import { Day3Component } from './../day3/day3.component';
 import { Day4ModalComponent } from './day4-modal/day4-modal.component';
 import { MatDialog } from '@angular/material';
 import { spots } from './../model/spots';
 import { Spot } from './../model/spot';
 import { Component, OnInit } from '@angular/core';
-import { ObserveOnMessage } from 'rxjs/internal/operators/observeOn';
 import { of, Observable } from 'rxjs';
 
 @Component({
@@ -22,6 +22,7 @@ export class Day4Component implements OnInit {
   geojson = './assets/bike.json';
   isLocation: boolean = false;
   isSpot: boolean = true;
+  isFood:boolean=false;
   gestureHandling='greedy';
 
   constructor(public dialog: MatDialog) { }
@@ -49,19 +50,30 @@ export class Day4Component implements OnInit {
     this.isLocation = true;
 
   }
+  showFood(event) {
+    if (event.checked) {
+      this.isFood=true;
+    } else {
+      this.isFood=false;
+    }
+
+  }
   openDialog() {
     this.dialog.open(Day4ModalComponent);
   }
   getSpots(): Observable<Spot[]> {
     return of(spots);
   }
+  getFoods():Observable<Spot[]>{
+    return of(sweets);
+  }
   openToDoDialog(){
     this.dialog.open(Day4DetailComponent);
   }
   markers: Spot[];
-
+  foods:Spot[];
   ngOnInit() {
     this.getSpots().subscribe(spots => { this.markers = spots });
-
+    this.getFoods().subscribe(sweets=>{this.foods=sweets});
   }
 }

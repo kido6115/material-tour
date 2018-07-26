@@ -116,5 +116,10 @@ export const spots: Spot[] = [
         lat: 34.892142,
         label: '宇治上神社',
         draggable: false
+    }, {
+        lng: 135.677347,
+        lat: 35.014451,
+        label: '嵐山ひょう猫の森(2F)',
+        draggable: false
     }
 ];

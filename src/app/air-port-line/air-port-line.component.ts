@@ -1,3 +1,4 @@
+import { AirPortLineModal2Component } from './air-port-line-modal2/air-port-line-modal2.component';
 import { AirPortLineModalComponent } from './air-port-line-modal/air-port-line-modal.component';
 import { MatDialog } from '@angular/material';
 import { Component, OnInit } from '@angular/core';
@@ -46,6 +47,9 @@ export class AirPortLineComponent implements OnInit {
   }
   openDialog(){
     this.dialog.open(AirPortLineModalComponent);
+  }
+  openDialog2(){
+    this.dialog.open(AirPortLineModal2Component);
   }
   openToDoDialog(){
     this.dialog.open(ToDoModalComponent);

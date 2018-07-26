@@ -3,4 +3,5 @@ export class Spot {
     lng:number ;
     label:string;
     draggable:boolean;
+    icon ?:string;
 }
