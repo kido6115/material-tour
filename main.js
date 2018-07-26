@@ -949,7 +949,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h2 mat-dialog-title>\n  待辦事項\n</h2>\n\n<mat-dialog-content class=\"post-form\">\n    <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">附近吃飯，之後可沿腳踏車路線騎車或車站附近逛街</mat-list-item>\n        <mat-list-item role=\"listitem\">租借費用約¥1000~1500，情況允許建議電動，營業時間通常到5點</mat-list-item>\n\n      </mat-list>\n</mat-dialog-content>\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close color=\"warn\">取消</button>\n</mat-dialog-actions>"
+module.exports = "<h2 mat-dialog-title>\n  待辦事項\n</h2>\n\n<mat-dialog-content class=\"post-form\">\n    <mat-list role=\"list\">\n        <mat-list-item role=\"listitem\">附近吃飯，之後可沿腳踏車路線騎車或車站附近逛街</mat-list-item>\n        <mat-list-item role=\"listitem\"></mat-list-item>\n        <mat-list-item role=\"listitem\">租借費用約¥1000~1500，情況允許建議電動，營業時間通常到5點</mat-list-item>\n        <mat-list-item role=\"listitem\"></mat-list-item>\n        <mat-list-item role=\"listitem\">貓咪之森門票大人/小孩:¥780/¥580，半小時</mat-list-item>\n      </mat-list>\n</mat-dialog-content>\n<mat-dialog-actions>\n  <button mat-button mat-dialog-close color=\"warn\">取消</button>\n</mat-dialog-actions>"
 
 /***/ }),
 
@@ -2480,6 +2480,11 @@ var spots = [
         lng: 135.811750,
         lat: 34.892142,
         label: '宇治上神社',
+        draggable: false
+    }, {
+        lng: 135.677347,
+        lat: 35.014451,
+        label: '嵐山ひょう猫の森(2F)',
         draggable: false
     }
 ];
